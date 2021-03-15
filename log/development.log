@@ -1,0 +1,4 @@
+  [1m[35m (2632.1ms)[0m  [1m[35mCREATE DATABASE "ChartMyCourse_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (1706.7ms)[0m  [1m[35mCREATE DATABASE "ChartMyCourse_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
