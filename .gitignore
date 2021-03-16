@@ -2,3 +2,7 @@ node_modules/
 bundle.js
 bundle.js.map
 /public/assests
+/config/master.key
+.DS_store
+.byebug_history
+npm-debug.log
