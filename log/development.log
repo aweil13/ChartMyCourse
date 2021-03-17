@@ -376,3 +376,10 @@ Processing by RootController#root as HTML
 Completed 200 OK in 301ms (Views: 299.0ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for ::1 at 2021-03-17 02:09:31 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  Rendered root/root.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 319ms (Views: 317.5ms | ActiveRecord: 0.0ms)
+
+
