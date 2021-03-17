@@ -33,7 +33,7 @@ class SignupSessionForm extends React.Component {
         return(
         <div className="form-background">
             <div className="signup-form-container">
-                <a className="signup-link">{this.props.navLink}</a>
+            <div className="signup-link">{this.props.navLink}</div>
                 <form onSubmit={this.handleSubmit} className="signup-form-box">
                     {this.renderErrors()}
                     <div className="signup-form">
@@ -56,7 +56,7 @@ class SignupSessionForm extends React.Component {
                       <label className="first-name-label">
                         <input type="text" 
                           placeholder="First name" 
-                          value={this.state.email}
+                          value={this.state.first_name}
                           onChange={this.update('first_name')}
                           className="signup-input"    
                         />
@@ -64,7 +64,7 @@ class SignupSessionForm extends React.Component {
                       <label className="last-name-label">
                         <input type="text" 
                           placeholder="Last name" 
-                          value={this.state.email}
+                          value={this.state.last_name}
                           onChange={this.update('last_name')}
                           className="signup-input"    
                         />

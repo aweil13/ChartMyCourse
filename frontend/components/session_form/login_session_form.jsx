@@ -33,7 +33,7 @@ class LoginSessionForm extends React.Component {
         return(
         <div className="form-background">
             <div className="login-form-container">
-                <a className="signup-link">{this.props.navLink}</a>
+                <div className="signup-link">{this.props.navLink}</div>
                 <form onSubmit={this.handleSubmit} className="login-form-box">
                     {this.renderErrors()}
                     <div className="login-form">
