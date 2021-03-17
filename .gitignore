@@ -1,8 +1,12 @@
 node_modules/
 bundle.js
 bundle.js.map
-/public/assests
+/public/assets
 /config/master.key
 .DS_store
 .byebug_history
 npm-debug.log
+/log/*
+/tmp/*
+!/log/.keep
+!/tmp/.keep
