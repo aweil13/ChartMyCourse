@@ -1,9 +1,13 @@
 import React from 'react';
+import GreetingContainer from './greeting/greeting_container';
 
 const App = () => (
     <div>
-        <h1>Chart My Course</h1>
+        <header>
+            <h1>Chart My Course</h1>
+            <GreetingContainer/>
+        </header>
     </div>
-)
+);
 
 export default App;
