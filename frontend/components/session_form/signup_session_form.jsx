@@ -7,6 +7,10 @@ class SignupSessionForm extends React.Component {
         this.handleSubmit = this.handleSubmit.bind(this);
     };
 
+    componentWillUnmount(){
+      this.props.clearErrors();
+  }
+
     handleSubmit(e) {
         e.preventDefault();
         const user = Object.assign({}, this.state);
@@ -106,6 +110,7 @@ class SignupSessionForm extends React.Component {
                        <label className="male-button">
                         <input type="radio"
                           value="M"
+                          name="genderb"
                           onChange={this.update('gender')}  
                         />
                          <span>Male</span>   
@@ -114,6 +119,7 @@ class SignupSessionForm extends React.Component {
                        <label className="female-button">
                         <input type="radio"
                           value="F"
+                          name="genderb"
                           onChange={this.update('gender')}  
                         />
                         <span>Female</span>  
