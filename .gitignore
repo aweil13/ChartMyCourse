@@ -3,7 +3,6 @@ bundle.js
 bundle.js.map
 /public/assets
 /config/master.key
-.DS_store
 .byebug_history
 npm-debug.log
 /log/*
