@@ -5,11 +5,18 @@ class LoginSessionForm extends React.Component {
         super(props);
         this.state = this.props.initialState;
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.handleSubmitDummy = this.handleSubmitDummy.bind(this);
     };
 
     componentWillUnmount(){
         this.props.clearErrors();
     }
+
+    handleSubmitDummy(e){
+        e.preventDefault();
+        const guest = this.props.dummy;
+        this.props.processForm(guest);
+      }
 
     handleSubmit(e) {
         e.preventDefault();
@@ -37,6 +44,9 @@ class LoginSessionForm extends React.Component {
         return(
         <div className="login-form-background">
             <div className="login-form-container">
+            <div className="guest-login-container">
+              <button type="submit" onClick={this.handleSubmitDummy}>Try for Free!</button>
+            </div>
                 <div className="signup-link">{this.props.navLink}</div>
                 <form onSubmit={this.handleSubmit} className="login-form-box">
                     {this.renderErrors()}
