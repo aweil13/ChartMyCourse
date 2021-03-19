@@ -1,0 +1,106 @@
+.form-background {
+   background: rgb(228, 228, 228);
+   position: absolute;
+   width: 100%;
+   height: 1000px;
+}
+
+.signup-form-container{
+    max-width: 300px;
+    height: 900px;
+    margin: 80px auto;
+}
+
+.signup-form-container .signup-form-box{
+    height: 80%;
+    width: 100%;
+}
+
+.signup-form-box .signup-form{
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+}
+
+.signup-form-container .login-link {
+    text-align: right;
+    // margin-right: 60px;
+}
+
+.signup-form-container .login-link a{
+    text-decoration: none;
+    font-size: 10px;
+    color: darkgray;
+    transition-duration: 0.5s;
+}
+
+.signup-form-container .login-link a:hover{
+    color: rgb(114, 114, 114);
+}
+
+.signup-form-box .signup-form .signup-input{
+    margin: 10px;
+    width: 85%;
+    height: 30px;
+    background: transparent;
+    border: rgb(189, 187, 187) solid 1px;
+    text-align:  left;
+    padding: 0px 16px 0px;
+}
+
+.signup-input:focus-within{
+    outline: 1px solid blue;
+}
+
+.terms-privacy{
+    margin: 20px;
+    font-size: 12px;
+    padding: 5px;
+}
+
+.terms-privacy span{
+    color: grey;
+}
+
+.terms-privacy span a{
+    text-decoration: none;
+    color: rgb(48, 160, 230);
+}
+
+.signup-form .button-signup{
+    background: rgb(25, 168, 25);
+    border: none;
+    height: 40px;
+    width: 97%;
+    color:  rgb(228, 228, 228);
+    transition-duration: 0.5s;
+    margin-left: 10px;
+    border-radius: 2px;
+}
+
+.signup-form .button-signup:hover{
+    background: rgb(19, 136, 19);
+    cursor: pointer;
+}
+
+.birthdate-label{
+    width: auto;
+    text-align: center;
+}
+
+.birthdate-label span{
+    font-size: 15px;
+}
+
+input[type=date]{
+    color: rgb(129, 129, 129);
+}
+
+.gender-container {
+    display: flex;
+    justify-content: center;
+}
+
+.gender-container .female-button{
+    padding-left: 5px;
+}

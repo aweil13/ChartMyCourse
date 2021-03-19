@@ -1,0 +1,86 @@
+.login-form-background{
+    width: 100%;
+    position: absolute;
+    height: 500px;
+    background: rgb(228, 228, 228)
+}
+
+.login-form-container{
+    display: block;
+    position: relative;
+    max-width: 270px;
+    height: 70%;
+    margin-top: 125px; 
+    margin-left: 600px;
+}
+
+.login-form-container .login-form-box{
+    height: 80%;
+    width: 100%;
+}
+
+ .login-form{
+    height: 280px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form-container .signup-link{
+    text-align: right;
+}
+
+.login-form-container .signup-link a{
+    text-decoration: none;
+    font-size: 10px;
+    color: darkgray;
+    transition-duration: 0.5s;
+}
+
+.login-form-container .signup-link a:hover{
+    color: rgb(114, 114, 114);
+}
+
+.login-input{
+    margin: 10px;
+    width: 85%;
+    height: 30px;
+    background: transparent;
+    border: rgb(189, 187, 187) solid 1px;
+    text-align:  left;
+    padding: 0px 16px 0px;
+}
+
+.login-input:focus-within{
+    outline: 1px solid blue;
+}
+
+.forgot-password{
+    text-align: center;
+    margin: 15px;
+    font-size: 13px;
+}
+
+.forgot-password a{
+    color: grey;
+    transition-duration: 0.3s;
+}
+.forgot-password a:hover{
+    color: rgb(80, 80, 80);
+}
+
+.login-form-box button{
+    background: rgb(25, 168, 25);
+    border: none;
+    height: 40px;
+    width: 97%;
+    color:  rgb(228, 228, 228);
+    transition-duration: 0.5s;
+    margin-left: 10px;
+    border-radius: 2px;
+}
+
+.login-form-box button:hover{
+    cursor: pointer;
+    background: rgb(19, 136, 19);
+}

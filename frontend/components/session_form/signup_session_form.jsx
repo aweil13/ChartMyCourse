@@ -18,6 +18,7 @@ class SignupSessionForm extends React.Component {
     }
 
     renderErrors() {
+      debugger
         return (
             <ul>
                 {this.props.errors.map((error, i) => (
@@ -33,7 +34,7 @@ class SignupSessionForm extends React.Component {
         return(
         <div className="form-background">
             <div className="signup-form-container">
-            <div className="signup-link">{this.props.navLink}</div>
+            <div className="login-link">{this.props.navLink}</div>
                 <form onSubmit={this.handleSubmit} className="signup-form-box">
                     {this.renderErrors()}
                     <div className="signup-form">
@@ -78,7 +79,7 @@ class SignupSessionForm extends React.Component {
                         />
                       </label>
                       <label className="birthdate-label">
-                          Date of Birth
+                        <span>Date of Birth:</span>
                         <input type="date"
                           value={this.state.birthdate}
                           onChange={this.update('birthdate')}
@@ -102,22 +103,29 @@ class SignupSessionForm extends React.Component {
                         />
                       </label>
                     <div className="gender-container">
-                      <label className="male-button">
+                       <label className="male-button">
                         <input type="radio"
                           value="M"
                           onChange={this.update('gender')}  
                         />
                          <span>Male</span>   
-                      </label>
-                      <label className="female-button">
+                       </label>
+                      
+                       <label className="female-button">
                         <input type="radio"
                           value="F"
                           onChange={this.update('gender')}  
                         />
                         <span>Female</span>  
-                      </label>
-                    </div>
-                      <button type="submit" value={this.props.formType}>
+                       </label>
+                      </div>
+                      <p className="terms-privacy">
+                        <span>
+                          By signing up with ChartMyCourse, you agree
+                          to our <a href="/">Privacy Policy</a> &amp; <a href="/">Terms of Use.</a>   
+                        </span>
+                      </p>
+                      <button className="button-signup" type="submit" value={this.props.formType}>
                         <span className="button-text">Sign Up</span>    
                       </button>  
                     </div>

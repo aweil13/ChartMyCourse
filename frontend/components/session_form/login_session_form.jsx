@@ -23,15 +23,15 @@ class LoginSessionForm extends React.Component {
                 {this.props.errors.map((error, i) => (
                     <li key={`error-${i}`}>
                         {error}
-                    </li>
-                ))}
+                        </li>
+                    ))}       
             </ul>
         )
     }
 
     render(){
         return(
-        <div className="form-background">
+        <div className="login-form-background">
             <div className="login-form-container">
                 <div className="signup-link">{this.props.navLink}</div>
                 <form onSubmit={this.handleSubmit} className="login-form-box">
@@ -53,6 +53,9 @@ class LoginSessionForm extends React.Component {
                           className="login-input"
                         />
                       </label>
+                      <div className="forgot-password">
+                          <a href="">Forgot Password?</a>
+                      </div>
                       <button type="submit" value={this.props.formType}>
                         <span className="button-text">Log In</span>    
                       </button>  
