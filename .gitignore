@@ -10,3 +10,6 @@ npm-debug.log
 !/log/.keep
 !/tmp/.keep
 /config/application.yml
+
+# Ignore application configuration
+/config/application.yml
