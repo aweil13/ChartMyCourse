@@ -7,8 +7,6 @@ bundle.js.map
 npm-debug.log
 /log/*
 /tmp/*
-!/log/.keep
-!/tmp/.keep
 /config/application.yml
 
 # Ignore application configuration
