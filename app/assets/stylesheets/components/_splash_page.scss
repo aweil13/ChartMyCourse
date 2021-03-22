@@ -23,6 +23,7 @@
 }
 
 .image-links-container h2{
+    width: 80%;
    background-image: none;
    background: transparent;
    text-align: right;
@@ -43,8 +44,8 @@
     color: white;
     background-image: none;
     background: transparent;
-    width: 25%;
-    margin-left: 63.5%;
+    width: 20%;
+    margin-left: 60%;
     font-size: 12px;
     letter-spacing: 1px;
 }
@@ -59,7 +60,7 @@
 .links-container .guest-demo-button{
     width: 250px;
     margin-top: 30px;
-    margin-left: 62%;
+    margin-left: 56%;
     height: 40px;
     background: rgb(60, 60, 255);
     border: none;
@@ -82,7 +83,7 @@
     height: 35px;
     width: 250px;
     border-radius: 2px;
-    margin-left: 62%;
+    margin-left: 56%;
     color: white;
     font-weight: bolder;
 }
@@ -99,7 +100,7 @@
 }
 
 .login-container span{
-    margin-left: 67.2%;
+    margin-left: 61.2%;
     padding-right: 5px;
     font-style: italic;
 }
