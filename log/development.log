@@ -6397,3 +6397,2217 @@ Processing by RootController#root as HTML
 Completed 200 OK in 241ms (Views: 218.2ms | ActiveRecord: 21.9ms)
 
 
+Started GET "/" for ::1 at 2021-03-21 22:25:41 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (26.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (29.1ms)
+Completed 200 OK in 470ms (Views: 430.2ms | ActiveRecord: 27.1ms)
+
+
+Started GET "/" for ::1 at 2021-03-21 22:35:48 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 222ms (Views: 219.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2021-03-21 22:36:08 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 130ms (Views: 128.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2021-03-21 22:36:32 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 102ms (Views: 100.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2021-03-21 22:38:38 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 102ms (Views: 99.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2021-03-21 22:39:07 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 100ms (Views: 98.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2021-03-21 22:39:23 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 116ms (Views: 114.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2021-03-21 22:39:37 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 99ms (Views: 97.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2021-03-21 22:39:46 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 104ms (Views: 102.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2021-03-21 22:40:06 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 102ms (Views: 100.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2021-03-21 22:40:15 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 100ms (Views: 98.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2021-03-21 22:40:51 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 102ms (Views: 100.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2021-03-21 22:41:29 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 114ms (Views: 112.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2021-03-21 22:41:45 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 151ms (Views: 149.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-21 22:41:59 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 107ms (Views: 105.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-21 22:42:52 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 102ms (Views: 100.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-21 22:42:54 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 29ms (Views: 27.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-21 22:43:07 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 95ms (Views: 92.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-21 22:43:14 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 98ms (Views: 96.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-21 22:43:32 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 94ms (Views: 92.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-21 22:43:54 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 96ms (Views: 95.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-21 22:44:05 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 98ms (Views: 96.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-21 22:44:10 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 100ms (Views: 98.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-21 22:46:01 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 94ms (Views: 92.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-21 22:46:36 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 104ms (Views: 102.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-21 22:46:56 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 94ms (Views: 92.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-21 22:47:03 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 95ms (Views: 93.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-21 22:48:46 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 387ms (Views: 385.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-21 23:14:59 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 140ms (Views: 137.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2021-03-21 23:16:06 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 127ms (Views: 124.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2021-03-21 23:16:40 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 116ms (Views: 114.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2021-03-21 23:16:44 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 44ms (Views: 42.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2021-03-21 23:17:02 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 31ms (Views: 29.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2021-03-21 23:23:12 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 124ms (Views: 121.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for ::1 at 2021-03-21 23:24:12 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 113ms (Views: 111.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2021-03-21 23:24:21 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 124ms (Views: 122.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2021-03-21 23:24:27 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 114ms (Views: 112.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2021-03-21 23:24:53 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 107ms (Views: 106.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-21 23:25:04 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 145ms (Views: 143.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2021-03-21 23:25:18 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 120ms (Views: 118.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2021-03-21 23:25:30 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 105ms (Views: 103.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2021-03-21 23:25:42 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (2.2ms)
+Completed 500 Internal Server Error in 55ms (ActiveRecord: 0.4ms)
+
+
+
+Sass::SyntaxError - Invalid CSS after "    height: 49%%": expected expression (e.g. 1px, bold), was ";":
+  app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___2479270721431620961_70059255479640'
+
+Started POST "/__better_errors/3ef4abd61563b4cf/variables" for ::1 at 2021-03-21 23:25:42 -0400
+Started GET "/" for ::1 at 2021-03-21 23:25:53 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 113ms (Views: 111.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-21 23:26:11 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 122ms (Views: 120.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2021-03-21 23:26:19 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 130ms (Views: 129.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-21 23:26:25 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 108ms (Views: 105.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2021-03-21 23:31:28 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 401ms (Views: 399.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2021-03-21 23:31:42 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 122ms (Views: 120.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-21 23:35:09 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 117ms (Views: 116.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-21 23:35:11 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 29ms (Views: 27.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-21 23:35:43 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 107ms (Views: 105.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-21 23:35:44 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 27ms (Views: 25.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-21 23:38:51 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 38ms (ActiveRecord: 0.2ms)
+
+
+
+Sass::SyntaxError - Invalid CSS after "...links-container": expected "{", was "":
+  app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___2479270721431620961_70059255013380'
+
+Started POST "/__better_errors/6a9d99bf57b8eef3/variables" for ::1 at 2021-03-21 23:38:51 -0400
+Started GET "/" for ::1 at 2021-03-21 23:39:02 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 95ms (Views: 93.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-21 23:40:06 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 111ms (Views: 109.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2021-03-21 23:40:07 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 31ms (Views: 29.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-21 23:40:15 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 111ms (Views: 109.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-21 23:40:15 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 28ms (Views: 26.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-21 23:42:00 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 136ms (Views: 134.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-21 23:42:01 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 31ms (Views: 29.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-21 23:43:42 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 128ms (Views: 127.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-21 23:43:43 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 29ms (Views: 27.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-21 23:43:53 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 93ms (Views: 91.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-21 23:44:05 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 97ms (Views: 95.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-21 23:45:13 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 100ms (Views: 98.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-21 23:45:27 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 103ms (Views: 101.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-21 23:46:26 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 94ms (Views: 92.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 00:04:08 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 98ms (Views: 95.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 00:04:25 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 94ms (Views: 92.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 00:04:26 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 28ms (Views: 26.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 00:04:34 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 94ms (Views: 92.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 00:04:41 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 32ms (Views: 30.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 00:04:47 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 101ms (Views: 99.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 00:05:48 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 156ms (Views: 154.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 00:06:10 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 91ms (Views: 89.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 00:06:11 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 32ms (Views: 30.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 00:06:23 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 101ms (Views: 99.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 00:06:24 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 29ms (Views: 27.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 00:08:44 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 98ms (Views: 96.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 00:09:08 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 102ms (Views: 100.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 00:09:39 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 91ms (Views: 89.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 00:14:42 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 99ms (Views: 97.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 00:15:58 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 104ms (Views: 102.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 00:16:13 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 117ms (Views: 115.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 00:16:32 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 93ms (Views: 92.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 00:16:38 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 31ms (Views: 30.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 00:17:05 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 101ms (Views: 99.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 00:17:12 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 98ms (Views: 97.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 00:17:24 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 93ms (Views: 91.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 00:17:52 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 102ms (Views: 100.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 00:18:13 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 92ms (Views: 90.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 00:18:23 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 101ms (Views: 99.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 00:18:41 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 103ms (Views: 101.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 00:18:57 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 96ms (Views: 94.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 00:19:22 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 102ms (Views: 100.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 00:19:41 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 100ms (Views: 98.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 00:19:53 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 95ms (Views: 93.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 00:20:11 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 109ms (Views: 107.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 00:20:21 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 104ms (Views: 102.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 00:20:43 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 93ms (Views: 91.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 00:22:09 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 91ms (Views: 89.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 00:22:20 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 122ms (Views: 120.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 00:22:48 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 98ms (Views: 96.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 00:23:20 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 103ms (Views: 101.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 00:25:23 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 383ms (Views: 381.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 00:25:39 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 136ms (Views: 134.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 01:06:46 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 96ms (Views: 94.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 01:06:47 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 32ms (Views: 30.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 01:10:39 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 96ms (Views: 94.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 01:11:01 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 108ms (Views: 106.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 01:11:16 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 99ms (Views: 96.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 01:11:49 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 98ms (Views: 96.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 01:12:35 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 113ms (Views: 111.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 01:12:45 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 112ms (Views: 109.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 01:13:06 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 123ms (Views: 120.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 01:13:19 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 112ms (Views: 109.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 01:13:32 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 133ms (Views: 130.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 01:13:58 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 153ms (Views: 151.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 01:15:13 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 112ms (Views: 110.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 01:15:35 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 123ms (Views: 122.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 01:16:06 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 125ms (Views: 123.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 01:16:32 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 111ms (Views: 109.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 01:17:16 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 110ms (Views: 108.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 01:17:30 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 111ms (Views: 109.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 01:18:54 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 108ms (Views: 106.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 01:20:58 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 113ms (Views: 111.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 01:21:06 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 93ms (Views: 91.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 01:23:44 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 105ms (Views: 103.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 01:26:39 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 108ms (Views: 106.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 01:26:52 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 102ms (Views: 100.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 01:27:12 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 113ms (Views: 111.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 01:27:47 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 100ms (Views: 98.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 01:29:08 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 101ms (Views: 99.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 01:29:18 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 113ms (Views: 110.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 01:29:25 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 105ms (Views: 103.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 01:29:31 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 124ms (Views: 122.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 01:29:47 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 112ms (Views: 110.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 01:31:35 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 473ms (Views: 471.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 01:31:46 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 105ms (Views: 103.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 01:31:57 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 138ms (Views: 136.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 01:32:45 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 111ms (Views: 108.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 01:33:00 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 110ms (Views: 108.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 01:33:24 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 111ms (Views: 109.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 01:33:42 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 116ms (Views: 113.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 01:33:59 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 114ms (Views: 112.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 01:34:19 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 120ms (Views: 118.5ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/session" for ::1 at 2021-03-22 01:35:18 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"username"=>"aweil13", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "aweil13"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:28
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:23
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["username", "aweil13"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/models/user.rb:23
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["session_token", "nglHlzAuIA4CGsaIAJrDVw"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/models/user.rb:23
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["email", "ale13@gmail.com"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/models/user.rb:23
+  [1m[36mUser Update (0.4ms)[0m  [1m[33mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "nglHlzAuIA4CGsaIAJrDVw"], ["updated_at", "2021-03-22 05:35:18.838481"], ["id", 1]]
+  ↳ app/models/user.rb:23
+  [1m[35m (4.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:23
+  Rendering api/users/show.json.jbuilder
+  Rendered api/users/_user.json.jbuilder (0.3ms)
+  Rendered api/users/show.json.jbuilder (5.4ms)
+Completed 200 OK in 202ms (Views: 13.9ms | ActiveRecord: 6.2ms)
+
+
+Started DELETE "/api/session" for ::1 at 2021-03-22 01:35:20 -0400
+Processing by Api::SessionsController#destroy as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "nglHlzAuIA4CGsaIAJrDVw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:23
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["username", "aweil13"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/models/user.rb:23
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["session_token", "n5B_meaK7hhj0M4jUmRaSw"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/models/user.rb:23
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["email", "ale13@gmail.com"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/models/user.rb:23
+  [1m[36mUser Update (0.3ms)[0m  [1m[33mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "n5B_meaK7hhj0M4jUmRaSw"], ["updated_at", "2021-03-22 05:35:20.599846"], ["id", 1]]
+  ↳ app/models/user.rb:23
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:23
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/api/session" for ::1 at 2021-03-22 01:35:25 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"username"=>"aweil13", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "aweil13"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:28
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:23
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["username", "aweil13"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/models/user.rb:23
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["session_token", "UqvQpEEWDOnlCFJhKM4lJA"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/models/user.rb:23
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["email", "ale13@gmail.com"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/models/user.rb:23
+  [1m[36mUser Update (0.2ms)[0m  [1m[33mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "UqvQpEEWDOnlCFJhKM4lJA"], ["updated_at", "2021-03-22 05:35:25.968877"], ["id", 1]]
+  ↳ app/models/user.rb:23
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:23
+  Rendering api/users/show.json.jbuilder
+  Rendered api/users/_user.json.jbuilder (0.2ms)
+  Rendered api/users/show.json.jbuilder (1.0ms)
+Completed 200 OK in 186ms (Views: 5.0ms | ActiveRecord: 1.5ms)
+
+
+Started DELETE "/api/session" for ::1 at 2021-03-22 01:35:30 -0400
+Processing by Api::SessionsController#destroy as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "UqvQpEEWDOnlCFJhKM4lJA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:23
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["username", "aweil13"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/models/user.rb:23
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["session_token", "o60Y370II1z3AUxGlTsMAQ"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/models/user.rb:23
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["email", "ale13@gmail.com"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/models/user.rb:23
+  [1m[36mUser Update (0.2ms)[0m  [1m[33mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "o60Y370II1z3AUxGlTsMAQ"], ["updated_at", "2021-03-22 05:35:30.532191"], ["id", 1]]
+  ↳ app/models/user.rb:23
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:23
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 01:37:00 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 102ms (Views: 100.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 01:37:08 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 111ms (Views: 109.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 01:37:15 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 114ms (Views: 112.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 01:38:09 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 101ms (Views: 99.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 01:39:10 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 104ms (Views: 102.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 01:39:11 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 27ms (Views: 25.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 01:39:58 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 103ms (Views: 102.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 01:40:10 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 106ms (Views: 103.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 01:40:26 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 102ms (Views: 100.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 01:40:34 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 108ms (Views: 106.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 01:40:42 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 32ms (Views: 30.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 01:40:53 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 108ms (Views: 105.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 01:41:12 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 112ms (Views: 109.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 01:42:31 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 99ms (Views: 97.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 01:42:44 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 109ms (Views: 107.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 01:43:47 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 127ms (Views: 125.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 01:49:49 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (22.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (24.4ms)
+Completed 200 OK in 143ms (Views: 118.9ms | ActiveRecord: 22.7ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 01:50:05 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 130ms (Views: 128.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 01:50:09 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 33ms (Views: 31.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 01:51:15 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 129ms (Views: 127.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 01:51:36 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 124ms (Views: 122.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 01:51:51 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 124ms (Views: 121.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 01:52:09 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 129ms (Views: 127.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 01:52:22 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 126ms (Views: 124.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 01:54:09 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 951ms (Views: 949.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 01:55:57 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 266ms (Views: 264.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 01:56:19 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 123ms (Views: 121.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 01:56:36 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 117ms (Views: 115.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 01:56:38 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 28ms (Views: 26.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 01:57:14 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 126ms (Views: 124.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 01:59:18 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 373ms (Views: 371.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 02:00:23 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 119ms (Views: 116.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 02:00:41 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 124ms (Views: 122.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 02:02:34 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 461ms (Views: 459.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 02:04:39 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 379ms (Views: 376.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 02:05:51 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 414ms (Views: 411.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 02:06:06 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 123ms (Views: 121.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 02:15:14 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 152ms (Views: 150.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 02:16:31 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 145ms (Views: 142.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 02:16:39 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 141ms (Views: 139.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 02:16:49 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 133ms (Views: 131.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 02:17:15 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 137ms (Views: 134.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 02:17:27 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 133ms (Views: 131.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 02:18:00 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 123ms (Views: 121.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 02:18:22 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 122ms (Views: 120.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 02:18:41 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 119ms (Views: 117.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 02:19:11 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 139ms (Views: 137.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 02:19:25 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 131ms (Views: 129.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 02:19:50 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 123ms (Views: 121.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 02:20:01 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 143ms (Views: 141.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 02:20:15 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 129ms (Views: 127.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 02:20:32 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 126ms (Views: 124.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 02:20:44 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 126ms (Views: 124.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 02:20:55 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 127ms (Views: 125.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 02:21:48 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 155ms (Views: 153.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 02:22:30 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 119ms (Views: 118.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 02:22:45 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 134ms (Views: 132.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 02:23:10 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 147ms (Views: 145.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 02:23:23 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 128ms (Views: 126.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 02:23:40 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 129ms (Views: 127.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 02:23:54 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 119ms (Views: 117.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 02:24:12 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 129ms (Views: 127.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 02:24:18 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 120ms (Views: 118.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 02:25:21 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 134ms (Views: 133.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 02:25:32 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 130ms (Views: 128.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 02:26:44 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 138ms (Views: 136.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 02:26:56 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 122ms (Views: 120.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 02:27:02 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 132ms (Views: 130.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 02:27:16 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 121ms (Views: 119.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 02:27:22 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 134ms (Views: 132.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 02:27:31 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 186ms (Views: 184.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 02:28:00 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 140ms (Views: 137.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 02:28:46 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 134ms (Views: 132.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 02:29:12 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 117ms (Views: 115.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 02:30:01 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 115ms (Views: 113.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 02:30:10 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 122ms (Views: 120.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 02:30:27 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 121ms (Views: 119.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 02:31:43 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 127ms (Views: 126.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 02:32:28 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 118ms (Views: 116.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 02:32:36 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 112ms (Views: 111.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 02:32:45 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 116ms (Views: 113.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 02:32:51 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 120ms (Views: 118.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 02:33:19 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (4.6ms)
+Completed 500 Internal Server Error in 50ms (ActiveRecord: 0.2ms)
+
+
+
+Sass::SyntaxError - Invalid CSS after "    cursor": expected ";", was ": pointer;":
+  app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___2479270721431620961_70368652518060'
+
+Started POST "/__better_errors/60b6c488b5c8eafb/variables" for ::1 at 2021-03-22 02:33:19 -0400
+Started GET "/" for ::1 at 2021-03-22 02:33:27 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 108ms (Views: 105.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 02:34:31 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 121ms (Views: 119.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 02:34:43 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 111ms (Views: 109.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 02:35:06 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 121ms (Views: 119.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 02:35:19 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 122ms (Views: 120.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 02:35:50 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 104ms (Views: 102.3ms | ActiveRecord: 0.2ms)
+
+

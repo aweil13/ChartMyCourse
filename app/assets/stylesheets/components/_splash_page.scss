@@ -1,0 +1,125 @@
+.middle-background{
+    background: whitesmoke;
+    height: 1000px;
+    width: auto; 
+}
+
+.middle-background .middle-container{
+    padding-top: 5px;
+    margin: 0 auto;
+    height: 60%;
+    width: 70%;
+}
+
+.middle-container .image-links-container{
+    height: 100%;
+    width: 100%;
+    background-image: url(https://uar-web-static.api.ua.com/1e9812f9cbfa6730e5c837476eea36c7.png);
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.image-links-container h2{
+   background-image: none;
+   background: transparent;
+   text-align: right;
+   margin-top: 35px;
+   margin-right: 14%;
+   color: white;
+   letter-spacing: 5px;
+   font-size: 22px;
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: bolder;
+   background-image: transparent;
+}
+
+.image-links-container span{
+    text-align: left;
+    margin-top: 30px;
+    height: 30px;
+    color: white;
+    background-image: none;
+    background: transparent;
+    width: 25%;
+    margin-left: 63.5%;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.image-links-container .links-container{
+    display: flex;
+    flex-direction: column;
+    background-image: none;
+    background: transparent;
+}
+
+.links-container .guest-demo-button{
+    width: 250px;
+    margin-top: 30px;
+    margin-left: 62%;
+    height: 40px;
+    background: rgb(60, 60, 255);
+    border: none;
+    border-radius: 2px;
+    color: white;
+    font-size: 11px;
+    font-weight: bolder;
+    transition-duration: 0.3s;
+}
+
+.links-container .guest-demo-button:hover{
+    cursor: pointer;
+    background: rgb(45, 45, 190);
+}
+
+.links-container .signup-button{
+    background: rgb(25, 168, 25);
+    border: none;
+    margin-top: 15px;
+    height: 35px;
+    width: 250px;
+    border-radius: 2px;
+    margin-left: 62%;
+    color: white;
+    font-weight: bolder;
+}
+
+.links-container .signup-button:hover{
+    cursor: pointer;
+    background: rgb(19, 136, 19);
+    transition-duration: 0.3s;
+}
+
+
+.login-container{
+    margin-top: 15px;
+}
+
+.login-container span{
+    margin-left: 67.2%;
+    padding-right: 5px;
+    font-style: italic;
+}
+
+
+
+.login-container button{
+    background: transparent;
+    border: none;
+    border: rgb(204, 204, 204) solid 2px;
+    font-size: 10px;
+    width: 80px;
+    height: 30px;
+    border-radius: 2px;
+    color: white;
+    letter-spacing: 1px;
+    transition-duration: 0.3s;
+}
+
+.login-container button:hover{
+    opacity: 0.6;
+    background: lightgray;
+    cursor: pointer;
+}

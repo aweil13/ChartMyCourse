@@ -8,8 +8,8 @@ import {login} from '../../actions/session_action';
 const mapStateToProps = () => {
     return {
         dummy: {username: 'aweil13', password: 'password'},
-        signupLink: <Link to='/signup'>SIGN UP</Link>,
-        loginLink: <Link to='/login'>LOG IN</Link>
+        signupLink: <Link to='/signup'><button className='signup-button'>SIGN UP</button></Link>,
+        loginLink: <Link to='/login'><button>LOG IN</button></Link>
     }
 }
 

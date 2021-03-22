@@ -18,13 +18,13 @@ class Splash extends React.Component {
                 <div className='middle-container'>
                     <div className='image-links-container'>
                       <h2>DOMINATE EVERY INCH</h2>
-                      <span> The finest run creating experience, backed by google maps</span>
+                      <span> The finest run route creating experience, backed by google maps.</span>
                        <div className='links-container'>
                         <button className='guest-demo-button' type='submit' onClick={this.handleSubmitDummy}>TRY FOR FREE</button>
-                        <button className='signup-button'>{this.props.signupLink}</button>
+                        {this.props.signupLink}
                         <div className='login-container'>
                           <span>Already a member?</span>
-                          <button>{this.props.loginLink}</button>
+                          {this.props.loginLink}
                         </div>
                        </div>
                     </div>
