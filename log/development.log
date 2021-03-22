@@ -8611,3 +8611,30 @@ Processing by RootController#root as HTML
 Completed 200 OK in 104ms (Views: 102.3ms | ActiveRecord: 0.2ms)
 
 
+Started GET "/" for ::1 at 2021-03-22 10:23:44 -0400
+
+PG::ConnectionBad - could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/var/run/postgresql/.s.PGSQL.5432"?:
+
+Started POST "/__better_errors/ae997a48c9743122/variables" for ::1 at 2021-03-22 10:23:44 -0400
+Started GET "/" for ::1 at 2021-03-22 10:24:56 -0400
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/alejandro/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (35.0ms)
+Completed 200 OK in 2967ms (Views: 2962.5ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 10:25:43 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 115ms (Views: 112.2ms | ActiveRecord: 1.2ms)
+
+
