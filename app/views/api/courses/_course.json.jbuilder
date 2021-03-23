@@ -1,0 +1,1 @@
+json.extract! course, :id, :name, :description, :distance, :start_lat, :start_long, :end_lat, :end_long

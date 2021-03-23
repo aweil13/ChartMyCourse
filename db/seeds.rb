@@ -11,3 +11,4 @@ User.destroy_all
 ApplicationRecord.connection.reset_pk_sequence!('users')
 
 User.create(username: "aweil13", password: "password", email: "ale13@gmail.com", birthdate: '1991/05/07', first_name: "Alejandro", last_name: "Weil", gender: "M", height: 180, weight: 85)
+User.create(username: "eripley4", password: "password", email: "ripley@weyland-yutani.org", birthdate: '1980/03/17', first_name: "Ellen", last_name: "Ripley", gender: "F", height: 165, weight: 50)

@@ -33,4 +33,9 @@ class Api::CoursesController < ApplicationController
         )
     end
 
+    def bounds
+        params[:bounds]
+    end
+
+
 end
