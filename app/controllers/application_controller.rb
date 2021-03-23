@@ -20,8 +20,10 @@ class ApplicationController < ActionController::Base
         @current_user = user
     end
 
-    def require_logged_in!
-        
+    def require_logged_in
+        unless current_user
+            render json: { base: ['Requires login']}, status: 401
+        end
     end
 
 end
