@@ -35,7 +35,8 @@ class User < ApplicationRecord
             self.session_token ||= SecureRandom.urlsafe_base64
         end
 
-
+        has_many :courses,
+        foreign_key: :creator_id
 
 
 end

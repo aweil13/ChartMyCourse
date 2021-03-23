@@ -8863,3 +8863,247 @@ Processing by RootController#root as HTML
 Completed 200 OK in 33ms (Views: 30.3ms | ActiveRecord: 1.1ms)
 
 
+Started GET "/" for ::1 at 2021-03-22 16:29:12 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (25.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (27.0ms)
+Completed 200 OK in 501ms (Views: 465.3ms | ActiveRecord: 25.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 16:29:59 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 410ms (Views: 407.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 16:30:16 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 34ms (Views: 32.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 16:30:24 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 366ms (Views: 364.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 16:30:46 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 394ms (Views: 392.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 16:31:02 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 131ms (Views: 129.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 16:34:51 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 43ms (Views: 41.6ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/api/session" for ::1 at 2021-03-22 17:05:30 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"username"=>"aweil13", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "aweil13"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:28
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:23
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["username", "aweil13"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/models/user.rb:23
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["session_token", "_CE4vn9LxMDumEAfAqk0Tw"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/models/user.rb:23
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["email", "ale13@gmail.com"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/models/user.rb:23
+  [1m[36mUser Update (0.8ms)[0m  [1m[33mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "_CE4vn9LxMDumEAfAqk0Tw"], ["updated_at", "2021-03-22 21:05:30.358968"], ["id", 1]]
+  ↳ app/models/user.rb:23
+  [1m[35m (4.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:23
+  Rendering api/users/show.json.jbuilder
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered api/users/show.json.jbuilder (6.5ms)
+Completed 200 OK in 284ms (Views: 15.0ms | ActiveRecord: 72.2ms)
+
+
+Started DELETE "/api/session" for ::1 at 2021-03-22 17:05:36 -0400
+Processing by Api::SessionsController#destroy as JSON
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "_CE4vn9LxMDumEAfAqk0Tw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:23
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["username", "aweil13"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/models/user.rb:23
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["session_token", "bQp2aWl1RJZzwUUIfy8-rw"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/models/user.rb:23
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["email", "ale13@gmail.com"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/models/user.rb:23
+  [1m[36mUser Update (0.3ms)[0m  [1m[33mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "bQp2aWl1RJZzwUUIfy8-rw"], ["updated_at", "2021-03-22 21:05:36.028455"], ["id", 1]]
+  ↳ app/models/user.rb:23
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:23
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 21:18:09 -0400
+  [1m[35m (8.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/alejandro/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (19.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (51.2ms)
+Completed 200 OK in 3180ms (Views: 3150.7ms | ActiveRecord: 21.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 21:30:38 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 35ms (Views: 32.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-22 21:50:00 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered root/root.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 35ms (Views: 32.6ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/api/session" for ::1 at 2021-03-22 21:50:06 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"username"=>"aweil13", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "aweil13"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:28
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:23
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["username", "aweil13"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/models/user.rb:23
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["session_token", "n4NikfYCH1QltMKZK2w_rA"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/models/user.rb:23
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["email", "ale13@gmail.com"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/models/user.rb:23
+  [1m[36mUser Update (0.4ms)[0m  [1m[33mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "n4NikfYCH1QltMKZK2w_rA"], ["updated_at", "2021-03-23 01:50:06.251290"], ["id", 1]]
+  ↳ app/models/user.rb:23
+  [1m[35m (5.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:23
+  Rendering api/users/show.json.jbuilder
+  Rendered api/users/_user.json.jbuilder (0.3ms)
+  Rendered api/users/show.json.jbuilder (7.4ms)
+Completed 200 OK in 238ms (Views: 16.3ms | ActiveRecord: 25.9ms)
+
+
+Started DELETE "/api/session" for ::1 at 2021-03-22 21:50:11 -0400
+Processing by Api::SessionsController#destroy as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "n4NikfYCH1QltMKZK2w_rA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:23
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["username", "aweil13"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/models/user.rb:23
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["session_token", "C-CYq_AHnQsFQSo_6UL_9Q"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/models/user.rb:23
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["email", "ale13@gmail.com"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/models/user.rb:23
+  [1m[36mUser Update (0.3ms)[0m  [1m[33mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "C-CYq_AHnQsFQSo_6UL_9Q"], ["updated_at", "2021-03-23 01:50:11.859094"], ["id", 1]]
+  ↳ app/models/user.rb:23
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:23
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 2.0ms)
+
+
+
+ActiveRecord::PendingMigrationError - Migrations are pending. To resolve this issue, run:
+        bin/rails db:migrate RAILS_ENV=development:
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5713457373662794560)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateCourses (20210323022705)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(5713457373662794560)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5713457373662794560)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateCourses (20210323022705)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(5713457373662794560)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5713457373662794560)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateCourses (20210323022705)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (139.1ms)[0m  [1m[35mCREATE TABLE "courses" ("id" bigserial primary key, "creator_id" integer NOT NULL, "name" character varying NOT NULL, "description" text NOT NULL, "distance" float NOT NULL, "start_lat" float NOT NULL, "stat_long" float NOT NULL, "end_lat" float NOT NULL, "end_long" float NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20210323022705_create_courses.rb:3
+  [1m[35m (2.3ms)[0m  [1m[35mCREATE  INDEX  "index_courses_on_creator_id" ON "courses"  ("creator_id")[0m
+  ↳ db/migrate/20210323022705_create_courses.rb:14
+  [1m[35m (2.0ms)[0m  [1m[35mCREATE  INDEX  "index_courses_on_name" ON "courses"  ("name")[0m
+  ↳ db/migrate/20210323022705_create_courses.rb:15
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210323022705"]]
+  ↳ bin/rails:9
+  [1m[35m (4.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (9.0ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(5713457373662794560)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5713457373662794560)[0m
+  ↳ bin/rails:9
+  [1m[35m (9.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to FixColumnName (20210323031134)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "courses" RENAME COLUMN "stat_long" TO "start_long"[0m
+  ↳ db/migrate/20210323031134_fix_column_name.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210323031134"]]
+  ↳ bin/rails:9
+  [1m[35m (4.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (5.7ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(5713457373662794560)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
