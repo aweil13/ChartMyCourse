@@ -22,13 +22,9 @@ class Api::CoursesController < ApplicationController
     private
     def course_params
         params.require(:course).permit(
-            :start_lat,
-            :start_long,
-            :end_lat,
-            :end_long,
             :name,
             :description,
-            :length,
+            :distance,
             :creator_id
         )
     end

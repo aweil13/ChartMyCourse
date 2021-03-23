@@ -75,14 +75,21 @@
     background: rgb(45, 45, 190);
 }
 
+
+.signup-link-splash{
+    width: 250px;
+    height: 35px;
+    margin-top: 15px;
+    margin-left: 50%;
+}
+
+
 .links-container .signup-button{
     background: rgb(25, 168, 25);
     border: none;
-    margin-top: 15px;
     height: 35px;
     width: 250px;
     border-radius: 2px;
-    margin-left: 56%;
     color: white;
     font-weight: bolder;
 }
