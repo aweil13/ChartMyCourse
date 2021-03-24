@@ -1,6 +1,6 @@
 .middle-background{
     background: whitesmoke;
-    height: 1500px;
+    height: 1600px;
     width: 100%; 
     position: absolute;
 }
@@ -13,7 +13,7 @@
 }
 
 .middle-container .image-links-container{
-    height: 50%;
+    height: 670px;
     width: 100%;
     background-image: url(https://uar-web-static.api.ua.com/1e9812f9cbfa6730e5c837476eea36c7.png);
     -webkit-background-size: cover;
@@ -28,13 +28,14 @@
 }
 
 .middle-container .second-image-container{
-    height: 40%;
+    height: 600px;
     width: 100%;
     background-image: url(https://uar-web-static.api.ua.com/74e86e7e66b33580d457bc392d1ca328.png);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .image-links-container h2{
@@ -42,26 +43,26 @@
    background-image: none;
    background: transparent;
    text-align: right;
-   margin-top: 35px;
-   margin-left: 30%;
+   margin-top: 50px;
+   margin-left: 40%;
    color: white;
    letter-spacing: 5px;
-   font-size: 22px;
+   font-size: 35px;
    font-family: Arial, Helvetica, sans-serif;
    font-weight: bolder;
    background-image: transparent;
 }
 
 .image-links-container span{
-    text-align: left;
+    text-align: center;
     margin-top: 30px;
     height: 30px;
     color: white;
     background-image: none;
     background: transparent;
     width: 20%;
-    margin-left: 60%;
-    font-size: 12px;
+    margin-left: 71%;
+    font-size: 14px;
     letter-spacing: 1px;
 }
 
@@ -75,13 +76,13 @@
 .links-container .guest-demo-button{
     width: 250px;
     margin-top: 30px;
-    margin-left: 56%;
-    height: 40px;
+    margin-left: 71%;
+    height: 50px;
     background: rgb(60, 60, 255);
     border: none;
     border-radius: 2px;
     color: white;
-    font-size: 11px;
+    font-size: 13px;
     font-weight: bolder;
     transition-duration: 0.3s;
 }
@@ -94,16 +95,16 @@
 
 .signup-link-splash{
     width: 250px;
-    height: 35px;
-    margin-top: 15px;
-    margin-left: 56%;
+    height: 50px;
+    margin-top: 35px;
+    margin-left: 71%;
 }
 
 
 .links-container .signup-button{
     background: rgb(25, 168, 25);
     border: none;
-    height: 35px;
+    height: 45px;
     width: 250px;
     border-radius: 2px;
     color: white;
@@ -118,11 +119,11 @@
 
 
 .login-container{
-    margin-top: 15px;
+    margin-top: 50px;
 }
 
 .login-container span{
-    margin-left: 61.2%;
+    margin-left: 74%;
     padding-right: 5px;
     font-style: italic;
 }
