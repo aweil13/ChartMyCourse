@@ -28,6 +28,8 @@ class Splash extends React.Component {
                         </div>
                        </div>
                     </div>
+                    <div className='second-image-container'>
+                    </div>
                 </div>
             </div>
         )
