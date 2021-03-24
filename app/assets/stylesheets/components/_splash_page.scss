@@ -24,10 +24,11 @@
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
+    margin-bottom: 5%;
 }
 
 .middle-container .second-image-container{
-    height: 400px;
+    height: 40%;
     width: 100%;
     background-image: url(https://uar-web-static.api.ua.com/74e86e7e66b33580d457bc392d1ca328.png);
     -webkit-background-size: cover;
