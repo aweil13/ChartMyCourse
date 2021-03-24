@@ -1,13 +1,15 @@
 import React from 'react';
-import {withRoute} from 'react-router-dom';
+import {withRouter} from 'react-router-dom';
+import ReactDOM from 'react-dom';
+
 
 const mapOptions = {
     center: {
         lat: 40.785091,
-        long: -73.968285
+        lng: -73.968285
     },
     zoom: 14
-}
+};
 
 class courseMap extends React.Component{
     componentDidMount(){
@@ -15,13 +17,14 @@ class courseMap extends React.Component{
     }
 
 
+
 render(){
     return(
-        <div ref={map => this.mapNode = map} className='map'>
-            Map
+        <div ref={map => this.mapNode = map} id='map'>
+            map
         </div>
     )
   }
 }
 
-export default courseMap;
+export default withRouter(courseMap);

@@ -3,8 +3,10 @@ import GreetingContainer from './greeting/greeting_container';
 import LoginSessionFormContainer from './session_form/login_form_container';
 import SignupSessionFormContainer from './session_form/signup_form_container';
 import {AuthRoute, ProtectedRoute} from '../util/route_util';
-import {Link, Switch} from 'react-router-dom';
+import {Link, Switch, Route} from 'react-router-dom';
 import SplashContainer from './splash/splash_container';
+import courseMap from './map/course_map';
+
 
 const App = () => (
     <div>
@@ -18,6 +20,7 @@ const App = () => (
         <AuthRoute exact path="/" component={SplashContainer}/>    
         <AuthRoute  exact path="/login" component={LoginSessionFormContainer}/>
         <AuthRoute  exact path="/signup" component={SignupSessionFormContainer}/>
+        <Route path='/map' component={courseMap}/>
         </Switch>
     </div>
 );
