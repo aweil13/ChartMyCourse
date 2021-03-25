@@ -1,0 +1,77 @@
+footer{
+    height: 150px;
+    width: 100%;
+    background-image: url(https://uar-web-static.api.ua.com/1fb53630c0234d4396417e96ffc2ec85.png);
+}
+
+footer .links-container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links-container img{
+    margin-right: 10px;
+    height: 200px;
+}
+
+.social-ul {
+    margin-right: 10px;
+}
+
+.social-ul .social-title-li{
+    margin-bottom: 15px;
+}
+
+.social-ul .social-title-li .social-title{
+    letter-spacing: 1px;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.social-list-element{
+    margin-top: 5px;
+}
+
+.social-list-element a{
+    color: grey;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+}
+
+.social-list-element a:hover{
+    text-decoration: underline;
+    color: white;
+}
+
+.help-ul{
+    margin-left: 20px;
+}
+
+.help-ul .help-title-li{
+    margin-bottom: 15px;
+}
+
+.help-ul .help-title-li .help-title{
+    letter-spacing: 1px;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.help-ul .help-list-element{
+    margin-top: 5px;
+}
+
+.help-list-element a{
+    color: grey;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+}
+
+.help-list-element a:hover{
+    text-decoration: underline;
+    color: white;
+}

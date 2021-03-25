@@ -6,13 +6,14 @@ import {AuthRoute, ProtectedRoute} from '../util/route_util';
 import {Link, Switch, Route} from 'react-router-dom';
 import SplashContainer from './splash/splash_container';
 import courseMap from './map/course_map';
-
+import Footer from '../components/footer/footer';
 
 const App = () => (
     <div>
         <header className="navbar">
             <div className="navbar-components-container">
               <div className="logo"><Link to="/">Chart My Course</Link> </div>
+              <Link to='/map'className='courses-link'>Courses</Link>
               <GreetingContainer/>
             </div>
         </header>
@@ -22,6 +23,7 @@ const App = () => (
         <AuthRoute  exact path="/signup" component={SignupSessionFormContainer}/>
         <Route path='/map' component={courseMap}/>
         </Switch>
+        <Footer/>
     </div>
 );
 
