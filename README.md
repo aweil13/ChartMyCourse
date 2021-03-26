@@ -5,20 +5,24 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+# ChartMyCourse App
 
-* System dependencies
+ChartMyCourse is a premier running or walking exercise web application where you can create and or view courses on a map that are great runs or walks! Users can also friend each other and post comments on courses.
 
-* Configuration
+[Link](https://chart-my-course.herokuapp.com/#/)
 
-* Database creation
+## Technologies Used
+* Google maps API
+* Postgresql database
+* Single page application, built with Ruby on Rails and React/Redux
 
-* Database initialization
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
 
-* ...
+
+
+
+
+* Course creating and saving functionality coming soon.
+* Friending and commenting functionality coming soon.
