@@ -6,7 +6,7 @@ import {AuthRoute, ProtectedRoute} from '../util/route_util';
 import {Link, Switch, Route} from 'react-router-dom';
 import SplashContainer from './splash/splash_container';
 import courseMap from './map/course_map';
-import Footer from '../components/footer/footer';
+
 
 const App = () => (
     <div>
@@ -23,7 +23,6 @@ const App = () => (
         <AuthRoute  exact path="/signup" component={SignupSessionFormContainer}/>
         <Route path='/map' component={courseMap}/>
         </Switch>
-        <Footer/>
     </div>
 );
 
