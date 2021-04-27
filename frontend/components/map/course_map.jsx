@@ -3,7 +3,7 @@ import {withRouter} from 'react-router-dom';
 import ReactDOM from 'react-dom';
 import Footer from '../footer/footer';
 
-const mapOptions = {
+const NEW_YORK = {
     center: {
         lat: 40.785091,
         lng: -73.968285
@@ -14,29 +14,38 @@ const mapOptions = {
 class courseMap extends React.Component{
     constructor(props){
         super(props);
+        this.state = {
+        }
+        this.waypoints = [];
+        this.createMap = this.createMap.bind(this);
+        this.createWaypoint = this.createWaypoint.bind(this);
+        this.clearMarkers = this.clearMarkers.bind(this);
     }
     componentDidMount(){
-        this.map = new google.maps.Map(this.mapNode, mapOptions);
-        const marker = new google.maps.Marker({
-            position: {
-                lat: 40.785091,
-                lng: -73.968285
-            },
-            map: this.map
-        })
-          
-        // google.maps.event.addListener(this.map, 'click', (e) => {
-        //     this.map.addMarker(e.latLng, this.map)
-        // })
-        // this.map.addMarker(mapOptions.center, this.map);
+        this.createMap()
+        console.log(this.map)
     };
     
-    // addMarker(location, map){
-    //     new google.maps.Marker({
-    //         position: location,
-    //         map: map
-    //     });
-    // };
+    createMap(){
+        this.map = new google.maps.Map(this.mapNode, NEW_YORK)
+        this.map.addListener('click', this.createWaypoint)
+    }
+
+    createWaypoint(e){
+        let marker = {lat: e.latLng.lat(), lng: e.latLng.lng()};
+        const mapMarker = new google.maps.Marker({
+            position: marker,
+            map: this.map
+        })
+        this.waypoints.push(marker);
+        console.log(mapMarker);
+        console.log(this.map);
+    }
+
+    clearMarkers(){
+        setMapOnAll(null);
+    }
+
 
     render(){
         return(
@@ -44,6 +53,7 @@ class courseMap extends React.Component{
                 <div ref={map => (this.mapNode = map)} id='map'>
                  map
                 </div>
+                <button onClick={this.clearMarkers}>Clear Markers</button>
                 <Footer/>
             </div>
         )
