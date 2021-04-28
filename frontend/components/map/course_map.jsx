@@ -17,14 +17,14 @@ class courseMap extends React.Component{
         this.state = {
         }
         this.waypoints = [];
-        this.createMap = this.createMap.bind(this);
         this.createWaypoint = this.createWaypoint.bind(this);
         this.clearMarkers = this.clearMarkers.bind(this);
-       
+        this.renderRoutes = this.renderRoutes.bind(this);
     }
     componentDidMount(){
-        this.createMap()
-        console.log(this.map)
+        this.createMap();
+        if (this.waypoints.length > 1){ this.renderRoutes();}
+        console.log(this.waypoints)
     };
     
    
@@ -35,22 +35,42 @@ class courseMap extends React.Component{
     }
 
     createWaypoint(e){
-        let marker = {lat: e.latLng.lat(), lng: e.latLng.lng()};
-        const mapMarker = new google.maps.Marker({
-            position: marker,
-            map: this.map
-        })
-        this.waypoints.push(marker);
-        console.log(mapMarker);
+        this.waypoints.push({lat: e.latLng.lat(), lng: e.latLng.lng()});
+        this.renderRoutes();
+        console.log(this.waypoints);
         console.log(this.map);
     }
 
+    renderRoutes(){
+        if (!this.directionsService) {this.directionsService = new google.maps.DirectionsService();}
+        if(!this.directionsDisplay) {this.directionsDisplay = new google.maps.DirectionsRenderer({map: this.map, preserveViewport: true});}
+        const midWaypoints = this.waypoints.slice(1, this.waypoints.length - 1);
+        const wpts = midWaypoints.map(way => ({
+            location: way,
+            stopover: false
+        }));
 
+        const initialWaypoint = {
+            origin: this.waypoints[0],
+            destination: this.waypoints[this.waypoints.length - 1],
+            travelMode: 'WALKING',
+            waypoints: wpts
+        }
+
+        this.directionsService.route(initialWaypoint, (result, status) => {
+            if (status === 'OK') {
+                this.directionsDisplay.setDirections(result);
+            }
+        })
+    }
 
     clearMarkers(){
         if (this.waypoints.length > 0){
             this.waypoints = [];
+            this.directionsDisplay.setDirections({routes: this.waypoints});
         }
+        console.log(this.waypoints)
+
     }
 
 
