@@ -20,15 +20,18 @@ class courseMap extends React.Component{
         this.createMap = this.createMap.bind(this);
         this.createWaypoint = this.createWaypoint.bind(this);
         this.clearMarkers = this.clearMarkers.bind(this);
+       
     }
     componentDidMount(){
         this.createMap()
         console.log(this.map)
     };
     
+   
+
     createMap(){
-        this.map = new google.maps.Map(this.mapNode, NEW_YORK)
-        this.map.addListener('click', this.createWaypoint)
+        this.map = new google.maps.Map(this.mapNode, NEW_YORK);
+        this.map.addListener('click', this.createWaypoint);
     }
 
     createWaypoint(e){
@@ -42,8 +45,12 @@ class courseMap extends React.Component{
         console.log(this.map);
     }
 
+
+
     clearMarkers(){
-        setMapOnAll(null);
+        if (this.waypoints.length > 0){
+            this.waypoints = [];
+        }
     }
 
 
@@ -53,7 +60,7 @@ class courseMap extends React.Component{
                 <div ref={map => (this.mapNode = map)} id='map'>
                  map
                 </div>
-                <button onClick={this.clearMarkers}>Clear Markers</button>
+                <button onClick={() => this.clearMarkers()}>Clear Markers</button>
                 <Footer/>
             </div>
         )
