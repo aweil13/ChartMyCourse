@@ -1,7 +1,7 @@
 import React from 'react';
 import Footer from '../footer/footer';
 import ButtonToolbar from './toolbars/button_toolbar';
-
+import MapSideToolbar from './toolbars/map_side_toolbar';
 
 const NEW_YORK = {
     center: {
