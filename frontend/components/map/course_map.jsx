@@ -1,6 +1,4 @@
 import React from 'react';
-import {withRouter} from 'react-router-dom';
-import ReactDOM from 'react-dom';
 import Footer from '../footer/footer';
 
 const NEW_YORK = {
@@ -16,15 +14,16 @@ class courseMap extends React.Component{
         super(props);
         this.state = {
         }
-        this.waypoints = [];
+        this.currentWaypoints = [];
+        this.currentDistance = 0;
         this.createWaypoint = this.createWaypoint.bind(this);
         this.clearMarkers = this.clearMarkers.bind(this);
         this.renderRoutes = this.renderRoutes.bind(this);
     }
     componentDidMount(){
         this.createMap();
-        if (this.waypoints.length > 1){ this.renderRoutes();}
-        console.log(this.waypoints)
+        if (this.currentWaypoints.length > 0){ this.renderRoutes();}
+        console.log(this.currentWaypoints)
     };
     
    
@@ -35,24 +34,24 @@ class courseMap extends React.Component{
     }
 
     createWaypoint(e){
-        this.waypoints.push({lat: e.latLng.lat(), lng: e.latLng.lng()});
+        this.currentWaypoints.push({lat: e.latLng.lat(), lng: e.latLng.lng()});
         this.renderRoutes();
-        console.log(this.waypoints);
+        console.log(this.currentWaypoints);
         console.log(this.map);
     }
 
     renderRoutes(){
         if (!this.directionsService) {this.directionsService = new google.maps.DirectionsService();}
         if(!this.directionsDisplay) {this.directionsDisplay = new google.maps.DirectionsRenderer({map: this.map, preserveViewport: true});}
-        const midWaypoints = this.waypoints.slice(1, this.waypoints.length - 1);
+        const midWaypoints = this.currentWaypoints.slice(1, this.currentWaypoints.length - 1);
         const wpts = midWaypoints.map(way => ({
             location: way,
             stopover: false
         }));
 
         const initialWaypoint = {
-            origin: this.waypoints[0],
-            destination: this.waypoints[this.waypoints.length - 1],
+            origin: this.currentWaypoints[0],
+            destination: this.currentWaypoints[this.currentWaypoints.length - 1],
             travelMode: 'WALKING',
             waypoints: wpts
         }
@@ -65,11 +64,11 @@ class courseMap extends React.Component{
     }
 
     clearMarkers(){
-        if (this.waypoints.length > 0){
-            this.waypoints = [];
-            this.directionsDisplay.setDirections({routes: this.waypoints});
+        if (this.currentWaypoints.length > 0){
+            this.currentWaypoints = [];
+            this.directionsDisplay.setDirections({routes: this.currentWaypoints});
         }
-        console.log(this.waypoints)
+        console.log(this.currentWaypoints)
 
     }
 

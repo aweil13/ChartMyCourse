@@ -1,1 +1,1 @@
-json.extract! course, :id, :name, :description, :distance 
+json.extract! course, :id, :name, :description, :distance, :waypoints, :creator_id 
