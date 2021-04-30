@@ -15,15 +15,18 @@ class courseMap extends React.Component{
         this.state = {
         }
         this.currentWaypoints = [];
+        this.currentDistance = '0 MI'
         this.currentDistance = 0;
         this.createWaypoint = this.createWaypoint.bind(this);
         this.clearMarkers = this.clearMarkers.bind(this);
         this.renderRoutes = this.renderRoutes.bind(this);
+        this.undoWaypoint = this.undoWaypoint.bind(this);
+        this.returnToOrigin = this.returnToOrigin.bind(this);
     }
     componentDidMount(){
         this.createMap();
         if (this.currentWaypoints.length > 0){ this.renderRoutes();}
-        console.log(this.currentWaypoints)
+        console.log(this.currentDistance)
     };
     
    
@@ -36,8 +39,6 @@ class courseMap extends React.Component{
     createWaypoint(e){
         this.currentWaypoints.push({lat: e.latLng.lat(), lng: e.latLng.lng()});
         this.renderRoutes();
-        console.log(this.currentWaypoints);
-        console.log(this.map);
     }
 
     renderRoutes(){
@@ -63,6 +64,10 @@ class courseMap extends React.Component{
         })
     }
 
+    updateDistance(result){
+        const distanceText = result.routes[0].legs.distance.text.toUpperCase()
+    }
+
     clearMarkers(){
         if (this.currentWaypoints.length > 0){
             this.currentWaypoints = [];
@@ -72,6 +77,21 @@ class courseMap extends React.Component{
 
     }
 
+    returnToOrigin(){
+        if (this.currentWaypoints.length > 1){
+            this.currentWaypoints.push(this.currentWaypoints[0]);
+            this.renderRoutes();
+        }
+    }
+
+    undoWaypoint(){
+        if (this.currentWaypoints.length < 2){
+            this.clearMarkers();
+        } else {
+            this.currentWaypoints.pop();
+            this.renderRoutes();
+        }
+    }
 
     render(){
         return(
@@ -80,6 +100,8 @@ class courseMap extends React.Component{
                  map
                 </div>
                 <button onClick={() => this.clearMarkers()}>Clear Markers</button>
+                <button onClick={() => this.returnToOrigin()}>Return To Start</button>
+                <button onClick={() => this.undoWaypoint()}>Undo Waypoint</button>
                 <Footer/>
             </div>
         )
