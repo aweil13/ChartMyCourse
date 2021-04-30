@@ -1,5 +1,7 @@
 import React from 'react';
 import Footer from '../footer/footer';
+import ButtonToolbar from './toolbars/button_toolbar';
+
 
 const NEW_YORK = {
     center: {
@@ -9,19 +11,17 @@ const NEW_YORK = {
     zoom: 14
 };
 
-class courseMap extends React.Component{
+class CourseMap extends React.Component{
     constructor(props){
         super(props);
-        this.state = {
-        }
+        this.state = this.props.course;
         this.currentWaypoints = [];
-        this.currentDistance = '0 MI'
-        this.currentDistance = 0;
         this.createWaypoint = this.createWaypoint.bind(this);
         this.clearMarkers = this.clearMarkers.bind(this);
         this.renderRoutes = this.renderRoutes.bind(this);
         this.undoWaypoint = this.undoWaypoint.bind(this);
         this.returnToOrigin = this.returnToOrigin.bind(this);
+        this.updateDistance = this.updateDistance.bind(this);
     }
     componentDidMount(){
         this.createMap();
@@ -29,7 +29,9 @@ class courseMap extends React.Component{
         console.log(this.currentDistance)
     };
     
-   
+   componentWillUnmount(){
+       this.props.clearCourseErrors();
+   }
 
     createMap(){
         this.map = new google.maps.Map(this.mapNode, NEW_YORK);
@@ -60,21 +62,23 @@ class courseMap extends React.Component{
         this.directionsService.route(initialWaypoint, (result, status) => {
             if (status === 'OK') {
                 this.directionsDisplay.setDirections(result);
+                this.updateDistance(result);
             }
         })
+        this.setState({waypoints: this.currentWaypoints.slice()});
     }
 
     updateDistance(result){
-        const distanceText = result.routes[0].legs.distance.text.toUpperCase()
+        const distanceText = result.routes[0].legs[0].distance.text.toUpperCase();
+        this.setState({distance: distanceText})
     }
 
     clearMarkers(){
         if (this.currentWaypoints.length > 0){
             this.currentWaypoints = [];
             this.directionsDisplay.setDirections({routes: this.currentWaypoints});
+            this.setState({ distance: '0 MI', waypoints: [] });
         }
-        console.log(this.currentWaypoints)
-
     }
 
     returnToOrigin(){
@@ -99,13 +103,16 @@ class courseMap extends React.Component{
                 <div ref={map => (this.mapNode = map)} id='map'>
                  map
                 </div>
-                <button onClick={() => this.clearMarkers()}>Clear Markers</button>
-                <button onClick={() => this.returnToOrigin()}>Return To Start</button>
-                <button onClick={() => this.undoWaypoint()}>Undo Waypoint</button>
+                <ButtonToolbar
+                    undoWaypoint={this.undoWaypoint}
+                    clearMarkers={this.clearMarkers}
+                    returnToOrigin={this.returnToOrigin}
+                    distance={this.state.distance}
+                />
                 <Footer/>
             </div>
         )
     }
 }
 
-export default courseMap;
+export default CourseMap;
