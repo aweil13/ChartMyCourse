@@ -7,6 +7,7 @@ const ButtonToolbar = props => {
                 <span className='literal-distance'>DISTANCE</span>
                 <span className='distance-text'>{props.distance}</span>
             </div>
+            <div className='toolbar-buttons'>
             <div className='undo-container' onClick={props.undoWaypoint}>
                 <span className="fas fa-undo-alt"></span>
                 <span className='undo-text'>UNDO</span>
@@ -18,6 +19,7 @@ const ButtonToolbar = props => {
             <div className='clear-container' onClick={props.clearMarkers}>
                 <span className='fas fa-times'></span>
                 <span className='clear-text'>CLEAR</span>
+            </div>
             </div>
         </div>
     )

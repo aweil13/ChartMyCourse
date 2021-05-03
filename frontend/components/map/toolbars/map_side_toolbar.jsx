@@ -33,7 +33,7 @@ class MapSideToolbar extends React.Component {
     }
 
     update(field){
-        return e => this.setState({[field]: e.currentTarge.value});
+        return e => this.setState({[field]: e.currentTarget.value});
     }
 
     handleErrors(){
@@ -68,7 +68,7 @@ class MapSideToolbar extends React.Component {
                             Course Description
                         </span>
                         <input type="text"
-                          value={this.state.name}
+                          value={this.state.description}
                           onChange={this.update('description')}
                           className='sidebar-input'  
                         />
