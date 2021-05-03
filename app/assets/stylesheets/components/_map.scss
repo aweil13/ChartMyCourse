@@ -1,7 +1,75 @@
+.map-container{
+
+    position: relative;
+}
+
+.side-toolbar-container{
+    background: whitesmoke;
+    height: 40%;
+    width: 20%;
+    position: absolute;
+    z-index: 6;
+    margin-left: 5%;
+    margin-top: 10%;
+    border-radius: 20px;
+}
+
+.side-toolbar-box{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.create-a-course{
+    text-align: center;
+    font-family: 'Bungee';
+    height: 15%;
+    font-size: 30px;
+    color: darkblue;
+}
+
+.course-form-div{
+   position: relative;
+   bottom: 10%;
+   width: 90%;
+   margin: 0 auto;
+   background: dodgerblue;
+   height: 20%;
+   display: flex;
+   flex-direction: column;
+}
+
+
+.button-toolbar-container{
+    background: salmon;
+    position: absolute;
+    z-index: 6;
+    left: 80%;
+}
+
+.button-toolbar-container div{
+    background: seagreen;
+    display: flex;
+    position: absolute;
+}
+
+.button-toolbar-container div:hover{
+    cursor: pointer;
+} 
+
+.distance-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.distance-text{
+    text-align: center;
+}
 
 #map{
     height: 800px;
-    width: 1000px;
+    width: 100%;
     margin: 0px auto;
     position: relative;
     overflow: visible;

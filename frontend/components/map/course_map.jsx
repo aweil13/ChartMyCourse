@@ -8,7 +8,7 @@ const NEW_YORK = {
         lat: 40.785091,
         lng: -73.968285
     },
-    zoom: 14
+    zoom: 15
 };
 
 class CourseMap extends React.Component{
@@ -99,7 +99,18 @@ class CourseMap extends React.Component{
 
     render(){
         return(
+            <>
             <div className='map-container'> 
+                   <MapSideToolbar
+                    name={this.state.name}
+                    creator_id={this.state.creator_id}
+                    description={this.state.description}
+                    distance={this.state.distance}
+                    waypoints={this.state.waypoints}
+                    errors={this.props.errors}
+                    createCourse={this.props.createCourse}
+                    clearCourseErrors={this.props.clearCourseErrors}
+                />
                 <div ref={map => (this.mapNode = map)} id='map'>
                  map
                 </div>
@@ -109,8 +120,9 @@ class CourseMap extends React.Component{
                     returnToOrigin={this.returnToOrigin}
                     distance={this.state.distance}
                 />
-                <Footer/>
             </div>
+                <Footer/>
+                </>
         )
     }
 }
