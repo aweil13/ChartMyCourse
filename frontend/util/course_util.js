@@ -22,7 +22,7 @@ export const createCourse = course => (
 
 export const updateCourse = course => (
     $.ajax({
-        url: `api/routes/${course.id}`,
+        url: `api/courses/${course.id}`,
         method: 'PATCH',
         data: {course}
     })
@@ -30,7 +30,7 @@ export const updateCourse = course => (
 
 export const deleteCourse = courseId =>(
     $.ajax({
-        url: `api/routes/${courseId}`,
+        url: `api/courses/${courseId}`,
         method: 'DELETE'
     })
 )

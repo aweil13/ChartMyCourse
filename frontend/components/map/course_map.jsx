@@ -26,7 +26,6 @@ class CourseMap extends React.Component{
     componentDidMount(){
         this.createMap();
         if (this.currentWaypoints.length > 0){ this.renderRoutes();}
-        console.log(this.currentDistance)
     };
     
    componentWillUnmount(){
@@ -41,6 +40,7 @@ class CourseMap extends React.Component{
     createWaypoint(e){
         this.currentWaypoints.push({lat: e.latLng.lat(), lng: e.latLng.lng()});
         this.renderRoutes();
+        console.log(this.state)
     }
 
     renderRoutes(){
@@ -110,6 +110,7 @@ class CourseMap extends React.Component{
                     errors={this.props.errors}
                     createCourse={this.props.createCourse}
                     clearCourseErrors={this.props.clearCourseErrors}
+                    type={this.props.type}
                 />
                 <div ref={map => (this.mapNode = map)} id='map'>
                  map

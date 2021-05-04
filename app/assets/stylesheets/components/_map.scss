@@ -105,6 +105,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    border: 0.5px solid rgb(197, 197, 197);
     border-radius: 2px;
 }
 
@@ -115,6 +116,25 @@
 
 .toolbar-buttons div span{
     text-align: center;
+}
+
+#clear-x{
+    color: red;
+    font-size: 25px;
+}
+
+.clear-text{
+    font-size: 12px;
+}
+
+#undo-circle{
+    color: green;
+    font-size: 20px;
+}
+
+#return-circle{
+    color: green;
+    font-size: 20px;
 }
 
 .distance-container{

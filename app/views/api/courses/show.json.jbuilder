@@ -1,3 +1,1 @@
-json.set! @course.id do
-    json.partial! '/api/courses/course', course: @course
-end
+json.partial! "api/courses/course", course: @course

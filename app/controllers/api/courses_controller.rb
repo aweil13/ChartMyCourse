@@ -1,5 +1,5 @@
 class Api::CoursesController < ApplicationController
-    before_action :require_logged_in, only: [:create]
+    before_action :require_logged_in, only: [:create, :update, :destroy]
 
     def index
         @courses = Course.where(creator_id: params)
@@ -31,7 +31,7 @@ class Api::CoursesController < ApplicationController
             if @course.update(course_params)
                 render :show
             else
-                render json: @route.errors.full_messages, status: 422
+                render json: @course.errors.full_messages, status: 422
             end
         else
             render json: ['Course does not exist'], status: 404
@@ -41,7 +41,6 @@ class Api::CoursesController < ApplicationController
     def destroy
         @course = Course.find_by(id: params[:id])
         @user = current_user
-
         if @course
             if @user.id == @course.creator_id
                 @course.destroy
@@ -61,7 +60,7 @@ class Api::CoursesController < ApplicationController
             :description,
             :distance,
             :creator_id,
-            :waypoints
+            :waypoints)
     end
 
 

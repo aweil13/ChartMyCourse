@@ -21,14 +21,13 @@ class MapSideToolbar extends React.Component {
 
     handleSubmit(e){
         e.preventDefault();
-        if (this.state.waypoints.length > 1){
+        if (this.props.waypoints.length > 1){
             const waypointsToJSON = JSON.stringify(this.state.waypoints)
             this.setState({
                 waypoints: waypointsToJSON,
                 distance: this.props.distance
             });
-            const course = Object.assign({}, this.state);
-            this.props.createCourse(course);
+            this.props.createCourse(this.state);
         }
     }
 
@@ -36,17 +35,18 @@ class MapSideToolbar extends React.Component {
         return e => this.setState({[field]: e.currentTarget.value});
     }
 
-    handleErrors(){
-        return (
-            <div className='errors-container'>
-                {this.props.errors.map((error, i) => (
-                    <li key={`error-${i}`}>
-                        {error}
-                    </li>
-                ))}
-            </div>
-        )
-    }
+    // handleErrors(){
+    //     if (this.props.errors){
+    //     return (
+    //         <div className='errors-container'>
+    //             {this.props.errors.map((error, i) => (
+    //                 <li key={`error-${i}`}>
+    //                     {error}
+    //                 </li>
+    //             ))}
+    //         </div>
+    //     ) }
+    // }
 
     render(){
         return (
@@ -73,9 +73,9 @@ class MapSideToolbar extends React.Component {
                           className='sidebar-input'  
                         />
                     </div>      
-                    <button type='submit' className='create-course-button'>Create Course</button>
+                    <button type='submit' value={this.props.type} className='create-course-button'>Create Course</button>
                 </form>
-                {this.handleErrors()}
+                {/* {this.handleErrors()} */}
             </div>
         )
     }

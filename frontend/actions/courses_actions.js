@@ -39,20 +39,24 @@ export const requestUserCourses = userId => dispatch => (
 export const requestCourse = courseId => dispatch => (
     CourseAPIUtil.fetchCourse(courseId)
     .then(course => dispatch(receiveCourse(course)))
-    .catch(error => dispatch(receiveCourseErrors(errors.responseJSON)))
+    .catch(errors => dispatch(receiveCourseErrors(errors.responseJSON)))
 )
 
 export const createCourse = course => dispatch => (
-    CourseAPIUtil.createCourse(course)
-    .then(course => dispatch(receiveCourse(course)))
-    .catch(errors => dispatch(receiveCourseErrors(errors.responseJSON)))
+    CourseAPIUtil.createCourse(course).then(course => (
+        dispatch(receiveCourse(course))
+    ), err => (
+        dispatch(receiveCourseErrors(err))
+    ))
 );
 
 export const updateCourse = course => dispatch => (
-    CourseAPIUtil.updateCourse(course)
-    .then(course => dispatch(receiveCourse(course)))
-    .catch(errors => dispatch(receiveCourseErrors(errors.responseJSON)))
-)
+    CourseAPIUtil.updateCourse(course).then(course => (
+        dispatch(receiveCourse(course))
+    ), err => (
+        dispatch(receiveCourseErrors(err.responseJSON))
+    ))
+);
 
 export const deleteCourse = courseId => dispatch => (
     CourseAPIUtil.deleteCourse(courseId)
