@@ -1,4 +1,6 @@
 import React from 'react';
+import {withRouter} from 'react-router-dom';
+
 
 class MapSideToolbar extends React.Component {
     constructor(props){
@@ -15,24 +17,25 @@ class MapSideToolbar extends React.Component {
         this.handleSubmit = this.handleSubmit.bind(this);
     }
 
-    componentWillUnmount(){
-        this.props.clearCourseErrors();
-    }
+    // componentWillUnmount(){
+    //     this.props.clearCourseErrors();
+    // }
 
     handleSubmit(e){
         e.preventDefault();
         if (this.props.waypoints.length > 1){
-            const waypointsToJSON = JSON.stringify(this.state.waypoints)
-            this.setState({
-                waypoints: waypointsToJSON,
-                distance: this.props.distance
-            });
-            this.props.createCourse(this.state);
+         const waypointsArr = Object.values(this.state.waypoints);
+         this.setState({waypoints: waypointsArr, distance: this.props.distance}); 
+         this.props.createCourse(this.state);
+         console.log(this.state)
+        } else {
+            alert('You must select at least two points on the map to create a course!')
         }
     }
 
     update(field){
         return e => this.setState({[field]: e.currentTarget.value});
+        
     }
 
     // handleErrors(){
@@ -73,9 +76,8 @@ class MapSideToolbar extends React.Component {
                           className='sidebar-input'  
                         />
                     </div>      
-                    <button type='submit' value={this.props.type} className='create-course-button'>Create Course</button>
+                    <button className='create-course-button'>Create Course</button>
                 </form>
-                {/* {this.handleErrors()} */}
             </div>
         )
     }
