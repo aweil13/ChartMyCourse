@@ -6,7 +6,7 @@ import {AuthRoute, ProtectedRoute} from '../util/route_util';
 import {Link, Switch, Route} from 'react-router-dom';
 import SplashContainer from './splash/splash_container';
 import CourseMap from './map/course_map_container';
-
+import DashboardComponent from '../components/dashboard/dashboard_container';
 
 const App = () => (
     <div>
@@ -21,7 +21,8 @@ const App = () => (
         <AuthRoute exact path="/" component={SplashContainer}/>    
         <AuthRoute  exact path="/login" component={LoginSessionFormContainer}/>
         <AuthRoute  exact path="/signup" component={SignupSessionFormContainer}/>
-        <Route path='/map' component={CourseMap}/>
+        <ProtectedRoute exact path="/map" component={CourseMap}/>
+        <ProtectedRoute exact path="/dashboard" component={DashboardComponent}/>
         </Switch>
     </div>
 );

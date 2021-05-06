@@ -23,19 +23,17 @@ class MapSideToolbar extends React.Component {
 
     handleSubmit(e){
         e.preventDefault();
-        if (this.props.waypoints.length > 1){
-         const waypointsArr = Object.values(this.state.waypoints);
-         this.setState({waypoints: waypointsArr, distance: this.props.distance}); 
+        if (this.state.waypoints.length > 1){
+         const waypointsToJSON = JSON.stringify(this.props.waypoints);
+         this.setState({waypoints: waypointsToJSON, distance: this.props.distance, test: 'point'}); 
          this.props.createCourse(this.state);
-         console.log(this.state)
         } else {
             alert('You must select at least two points on the map to create a course!')
         }
     }
 
     update(field){
-        return e => this.setState({[field]: e.currentTarget.value});
-        
+        return e => this.setState({[field]: e.currentTarget.value});   
     }
 
     // handleErrors(){
@@ -52,6 +50,7 @@ class MapSideToolbar extends React.Component {
     // }
 
     render(){
+        console.log(this.state)
         return (
             <div className='side-toolbar-container'>
                 <form onSubmit={this.handleSubmit} className='side-toolbar-box'>

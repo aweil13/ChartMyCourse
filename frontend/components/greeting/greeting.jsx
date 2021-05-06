@@ -17,7 +17,7 @@ const Greeting = ({currentUser, logout}) => {
 
     const signedInDisplay = () => (
         <div className="header-display">
-            <h3 className="user-name">{currentUser.username}</h3>
+            <Link to="/dashboard" className="user-name">{currentUser.username}</Link>
             <button className="header-button" onClick={logout}>Log Out</button>
         </div>
     );

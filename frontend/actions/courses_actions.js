@@ -32,15 +32,15 @@ export const clearCourseErrors = () => ({
 
 export const requestUserCourses = userId => dispatch => (
     CourseAPIUtil.fetchUserCourses(userId)
-    .then(courses => dispatch(receiveUserCourses(courses)))
-    .catch(errors => dispatch(receiveCourseErrors(errors.responseJSON)))
-)
+    .then(courses => (dispatch(receiveUserCourses(courses))),
+    errors => dispatch(receiveCourseErrors(errors.responseJSON))
+))
 
 export const requestCourse = courseId => dispatch => (
     CourseAPIUtil.fetchCourse(courseId)
-    .then(course => dispatch(receiveCourse(course)))
-    .catch(errors => dispatch(receiveCourseErrors(errors.responseJSON)))
-)
+    .then(course => (dispatch(receiveCourse(course)))
+    , errors => (dispatch(receiveCourseErrors(errors.responseJSON)))
+))
 
 export const createCourse = course => dispatch => (
     CourseAPIUtil.createCourse(course).then(course => (
@@ -60,6 +60,6 @@ export const updateCourse = course => dispatch => (
 
 export const deleteCourse = courseId => dispatch => (
     CourseAPIUtil.deleteCourse(courseId)
-    .then(() => dispatch(removeCourse(courseId)))
-    .catch(errors => dispatch(receiveCourseErrors(errors.responseJSON)))
-)
+    .then(() => (dispatch(removeCourse(courseId)))
+    , errors => (dispatch(receiveCourseErrors(errors.responseJSON)))
+))

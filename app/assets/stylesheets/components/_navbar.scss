@@ -27,6 +27,10 @@
     text-transform: uppercase;
 }    
 
+.logo a:hover{
+    color: rgb(52, 52, 146)
+}
+
 .navbar-components-container .courses-link{
     text-decoration: none;
     font-size: 15px;
@@ -90,4 +94,39 @@
 .login-signup .login-button-link .login-button:hover{
     background: lightgray;
     cursor: pointer;
+}
+
+.header-display{
+    display: flex;
+    margin-top: 1.2%;
+    margin-right: 5%;
+    width: 15%;
+    justify-content: space-around;
+}
+
+.user-name{
+    text-align: center;
+    font-family: 'Bungee';
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: blue;
+}
+
+.user-name:hover{
+    cursor: pointer;
+    color: rgb(3, 3, 146);
+}
+
+.header-button{
+    background: green;
+    color: white;
+    border-radius: 3px;
+    border: none;
+}
+
+.header-button:hover{
+    cursor: pointer;
+    background: rgb(2, 94, 2);
 }

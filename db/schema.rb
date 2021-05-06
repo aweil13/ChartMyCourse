@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_05_03_162058) do
+ActiveRecord::Schema.define(version: 2021_05_05_185104) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -22,7 +22,7 @@ ActiveRecord::Schema.define(version: 2021_05_03_162058) do
     t.string "distance", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.text "waypoints", default: [], array: true
+    t.string "waypoints", null: false
     t.index ["creator_id"], name: "index_courses_on_creator_id"
     t.index ["name"], name: "index_courses_on_name"
   end

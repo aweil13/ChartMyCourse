@@ -39,6 +39,7 @@ class CourseMap extends React.Component{
 
     createWaypoint(e){
         this.currentWaypoints.push({lat: e.latLng.lat(), lng: e.latLng.lng()});
+        this.setState({waypoints: this.currentWaypoints.slice()});
         this.renderRoutes();
     }
 
@@ -60,17 +61,16 @@ class CourseMap extends React.Component{
 
         this.directionsService.route(initialWaypoint, (result, status) => {
             if (status === 'OK') {
-                this.directionsDisplay.setDirections(result);
                 this.updateDistance(result);
+                this.directionsDisplay.setDirections(result);
             }
         });
-        this.setState({waypoints: this.currentWaypoints.slice()});
+       
     }
 
     updateDistance(result){
         const distanceText = result.routes[0].legs[0].distance.text.toUpperCase();
         this.setState({distance: distanceText});
-        console.log(this.state)
     }
 
     clearMarkers(){
@@ -99,7 +99,7 @@ class CourseMap extends React.Component{
 
     render(){
         return(
-            <div>
+        <div>
             <div className='map-container'> 
                    <MapSideToolbar
                     name={this.state.name}
@@ -111,10 +111,8 @@ class CourseMap extends React.Component{
                     createCourse={this.props.createCourse}
                     clearCourseErrors={this.props.clearCourseErrors}
                     type={this.props.type}
-                />
-                <div ref={map => (this.mapNode = map)} id='map'>
-                 map
-                </div>
+                    />
+            <div ref={map => this.mapNode = map} id='map'/>
                 <ButtonToolbar
                     undoWaypoint={this.undoWaypoint}
                     clearMarkers={this.clearMarkers}
@@ -123,7 +121,7 @@ class CourseMap extends React.Component{
                 />
             </div>
                 <Footer/>
-                </div>
+        </div>
         )
     }
 }
