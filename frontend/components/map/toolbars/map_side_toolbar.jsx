@@ -1,5 +1,4 @@
 import React from 'react';
-import {withRouter} from 'react-router-dom';
 
 
 class MapSideToolbar extends React.Component {
@@ -25,8 +24,10 @@ class MapSideToolbar extends React.Component {
         e.preventDefault();
         if (this.state.waypoints.length > 1){
          const waypointsToJSON = JSON.stringify(this.props.waypoints);
-         this.setState({waypoints: waypointsToJSON, distance: this.props.distance, test: 'point'}); 
-         this.props.createCourse(this.state);
+         const course = this.state;
+         course['waypoints'] = waypointsToJSON;
+         course['distance'] = this.props.distance;
+         this.props.createCourse(course);
         } else {
             alert('You must select at least two points on the map to create a course!')
         }
@@ -50,7 +51,6 @@ class MapSideToolbar extends React.Component {
     // }
 
     render(){
-        console.log(this.state)
         return (
             <div className='side-toolbar-container'>
                 <form onSubmit={this.handleSubmit} className='side-toolbar-box'>

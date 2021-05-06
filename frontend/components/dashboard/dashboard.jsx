@@ -12,9 +12,7 @@ class DashboardComponent extends React.Component {
     }
 
     renderCourses(){
-        let courseArray = [];
-        Object.values(this.props.courses).map(course => {courseArray.push(course)})
-        courseArray.length < 1 ? null : courseArray.map(course => (
+          Object.values(this.props.courses).map(course => (
             <tr key={course.id} className='course-row'>
                 <th>{course.name}</th>
                 <th>{course.description}</th>
@@ -52,7 +50,16 @@ class DashboardComponent extends React.Component {
                             <th className='table-heading'>Course Distance</th>       
                             <th className='table-heading'>Edit/Delete</th>       
                         </tr>
-                        {this.renderCourses()}
+                        {Object.values(this.props.courses).length < 1 ? null : Object.values(this.props.courses).map(course => (
+                        <tr key={course.id} className='course-row'>
+                            <th>{course.name}</th>
+                            <th>{course.description}</th>
+                            <th>{course.distance}</th>
+                            <th className='edit-delete-block'>
+                                <div onClick={() => {this.props.deleteCourse(course.id)}}>Delete Course</div>
+                                <div >Edit Course</div>
+                            </th>
+                        </tr>))}
                     </table>
                 </div>
               </div>
