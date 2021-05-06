@@ -1,0 +1,40 @@
+.dashboard-container{
+    display: flex;
+    height: 800px;
+}
+
+.courses-container{
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    background: chartreuse;
+}
+
+.user-welcome-container{
+    margin: 0 auto;
+    height: 10%;
+    width: 80%;
+    text-align: center;
+    background: chocolate;
+}
+
+.user-welcome-message{
+    font-family: 'Rubik Mono One', sans-serif;
+    margin-top: 2%;
+    font-size: 40px;
+    background: coral;
+}
+
+.courses-title-container{
+    margin: 0 auto;
+    background: cornflowerblue;
+    width: 35%;
+    text-align: center;
+    height: 3%;
+}
+
+.courses-title{
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 25px;
+}
