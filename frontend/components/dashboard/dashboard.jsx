@@ -4,16 +4,33 @@ import Footer from '../footer/footer';
 class DashboardComponent extends React.Component {
     constructor(props){
         super(props);
+        this.renderCourses = this.renderCourses.bind(this);
     }
 
     componentDidMount(){
         this.props.requestUserCourses(this.props.currentUser.id)
     }
 
+    renderCourses(){
+        let courseArray = [];
+        Object.values(this.props.courses).map(course => {courseArray.push(course)})
+        courseArray.length < 1 ? null : courseArray.map(course => (
+            <tr key={course.id} className='course-row'>
+                <th>{course.name}</th>
+                <th>{course.description}</th>
+                <th>{course.distance}</th>
+                <th className='edit-delete-block'>
+                    <div onClick={() => {this.props.deleteCourse(course.id)}}>Delete Course</div>
+                    <div >Edit Course</div>
+                </th>
+            </tr>
+        ))
+    }
+
+
     render(){
-        let array = [];
-        const user = this.props.currentUser
-        Object.values(this.props.courses).map(course => {array.push(course)})
+        const user = this.props.currentUser;
+        console.log(this.props.courses)
         return (
             <>
               <div className='dashboard-container'>
@@ -25,9 +42,18 @@ class DashboardComponent extends React.Component {
                     </div>
                     <div className='courses-title-container'>
                         <h2 className='courses-title'>
-                            Courses Created:
+                            Courses Created
                         </h2>
                     </div>
+                    <table className='courses-table'>
+                        <tr>
+                            <th className='table-heading'>Course Name</th>       
+                            <th className='table-heading'>Course Description</th>       
+                            <th className='table-heading'>Course Distance</th>       
+                            <th className='table-heading'>Edit/Delete</th>       
+                        </tr>
+                        {this.renderCourses()}
+                    </table>
                 </div>
               </div>
               <Footer/>
