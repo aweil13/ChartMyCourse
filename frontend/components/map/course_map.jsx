@@ -8,7 +8,7 @@ const NEW_YORK = {
         lat: 40.785091,
         lng: -73.968285
     },
-    zoom: 15
+    zoom: 14
 };
 
 class CourseMap extends React.Component{

@@ -44,7 +44,7 @@ class DashboardComponent extends React.Component {
                         </h2>
                     </div>
                     <table className='courses-table'>
-                        <tr>
+                        <tr className='column-headers'>
                             <th className='table-heading'>Course Name</th>       
                             <th className='table-heading'>Course Description</th>       
                             <th className='table-heading'>Course Distance</th>       
@@ -52,13 +52,13 @@ class DashboardComponent extends React.Component {
                         </tr>
                         {Object.values(this.props.courses).length < 1 ? null : Object.values(this.props.courses).map(course => (
                         <tr key={course.id} className='course-row'>
-                            <th>{course.name}</th>
-                            <th>{course.description}</th>
-                            <th>{course.distance}</th>
-                            <th className='edit-delete-block'>
-                                <div onClick={() => {this.props.deleteCourse(course.id)}}>Delete Course</div>
-                                <div >Edit Course</div>
-                            </th>
+                            <td>{course.name}</td>
+                            <td>{course.description}</td>
+                            <td className='course-distance-cell'>{course.distance}</td>
+                            <td className='edit-delete-block'>
+                                <div className='edit-delete-link' onClick={() => {this.props.deleteCourse(course.id)}}>Delete Course</div>
+                                <div className='edit-delete-link'>Edit Course</div>
+                            </td>
                         </tr>))}
                     </table>
                 </div>

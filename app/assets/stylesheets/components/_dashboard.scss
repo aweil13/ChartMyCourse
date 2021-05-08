@@ -43,3 +43,36 @@
     background: blue;
 }
 
+table, th, td{
+    border: 3px solid black;
+    border-collapse: collapse;
+}
+
+.table-heading{
+    padding: 5px;
+    font-size: 15px;
+    font-family: 'Rubik Mono One', sans-serif;
+    color: white;
+}
+
+.course-row td{
+    background: chartreuse;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.edit-delete-link{
+    margin-top: 6px;
+    color: blue;
+    font-size: 20px;
+}
+
+.edit-delete-link:hover{
+    cursor: pointer;
+    color: rgb(1, 1, 160);
+}
+
+.course-distance-cell{
+    background: blue;
+}
