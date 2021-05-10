@@ -15,19 +15,16 @@
     height: 10%;
     width: 80%;
     text-align: center;
-    background: chocolate;
 }
 
 .user-welcome-message{
     font-family: 'Rubik Mono One', sans-serif;
     margin-top: 2%;
     font-size: 40px;
-    background: coral;
 }
 
 .courses-title-container{
     margin: 0 auto;
-    background: cornflowerblue;
     width: 35%;
     text-align: center;
     height: 3%;
@@ -40,7 +37,6 @@
 
 .courses-table{
     margin-top: 3%;
-    background: blue;
 }
 
 table, th, td{
@@ -53,10 +49,10 @@ table, th, td{
     font-size: 15px;
     font-family: 'Rubik Mono One', sans-serif;
     color: white;
+    background: blue;
 }
 
 .course-row td{
-    background: chartreuse;
     padding: 10px;
     text-align: center;
     font-size: 20px;
@@ -64,15 +60,12 @@ table, th, td{
 
 .edit-delete-link{
     margin-top: 6px;
-    color: blue;
     font-size: 20px;
+    color: blue;
+    text-decoration: none;
 }
 
 .edit-delete-link:hover{
     cursor: pointer;
     color: rgb(1, 1, 160);
-}
-
-.course-distance-cell{
-    background: blue;
 }

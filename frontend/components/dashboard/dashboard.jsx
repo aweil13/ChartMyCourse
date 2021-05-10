@@ -1,34 +1,20 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Footer from '../footer/footer';
 
 class DashboardComponent extends React.Component {
     constructor(props){
         super(props);
-        this.renderCourses = this.renderCourses.bind(this);
     }
 
     componentDidMount(){
         this.props.requestUserCourses(this.props.currentUser.id)
     }
 
-    renderCourses(){
-          Object.values(this.props.courses).map(course => (
-            <tr key={course.id} className='course-row'>
-                <th>{course.name}</th>
-                <th>{course.description}</th>
-                <th>{course.distance}</th>
-                <th className='edit-delete-block'>
-                    <div onClick={() => {this.props.deleteCourse(course.id)}}>Delete Course</div>
-                    <div >Edit Course</div>
-                </th>
-            </tr>
-        ))
-    }
 
 
     render(){
         const user = this.props.currentUser;
-        console.log(this.props.courses)
         return (
             <>
               <div className='dashboard-container'>
@@ -57,7 +43,7 @@ class DashboardComponent extends React.Component {
                             <td className='course-distance-cell'>{course.distance}</td>
                             <td className='edit-delete-block'>
                                 <div className='edit-delete-link' onClick={() => {this.props.deleteCourse(course.id)}}>Delete Course</div>
-                                <div className='edit-delete-link'>Edit Course</div>
+                                <Link to={`courses/${course.id}/edit`} className='edit-delete-link'>Edit Course</Link>
                             </td>
                         </tr>))}
                     </table>

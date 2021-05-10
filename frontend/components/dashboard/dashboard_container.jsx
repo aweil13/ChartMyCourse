@@ -1,5 +1,5 @@
 import {connect} from 'react-redux';
-import {requestUserCourses, deleteCourse, updateCourse} from '../../actions/courses_actions';
+import {requestUserCourses, deleteCourse} from '../../actions/courses_actions';
 import DashboardContainer from './dashboard';
 
 const mSTP = ({session, entities}) => ({

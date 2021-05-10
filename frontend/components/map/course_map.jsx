@@ -15,6 +15,10 @@ class CourseMap extends React.Component{
     constructor(props){
         super(props);
         this.state = this.props.course;
+        if (this.state.waypoints.length > 0){
+            this.state.waypoints = JSON.parse(this.state.waypoints);
+        }
+
         this.currentWaypoints = this.state.waypoints;
         this.createWaypoint = this.createWaypoint.bind(this);
         this.clearMarkers = this.clearMarkers.bind(this);
@@ -39,7 +43,6 @@ class CourseMap extends React.Component{
 
     createWaypoint(e){
         this.currentWaypoints.push({lat: e.latLng.lat(), lng: e.latLng.lng()});
-        this.setState({waypoints: this.currentWaypoints.slice()});
         this.renderRoutes();
     }
 
@@ -65,7 +68,7 @@ class CourseMap extends React.Component{
                 this.directionsDisplay.setDirections(result);
             }
         });
-       
+        this.setState({waypoints: this.currentWaypoints.slice()});
     }
 
     updateDistance(result){

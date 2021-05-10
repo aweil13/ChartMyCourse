@@ -5,7 +5,8 @@ import SignupSessionFormContainer from './session_form/signup_form_container';
 import {AuthRoute, ProtectedRoute} from '../util/route_util';
 import {Link, Switch, Route} from 'react-router-dom';
 import SplashContainer from './splash/splash_container';
-import CourseMap from './map/course_map_container';
+import CreateCourseMap from './map/create_course_map_container';
+import EditCourseMap from './map/edit_course_map_container';
 import DashboardComponent from '../components/dashboard/dashboard_container';
 
 const App = () => (
@@ -13,7 +14,7 @@ const App = () => (
         <header className="navbar">
             <div className="navbar-components-container">
               <div className="logo"><Link to="/">Chart My Course</Link> </div>
-              <Link to='/map'className='courses-link'>Courses</Link>
+              <Link to='/map'className='courses-link'>Create Courses</Link>
               <GreetingContainer/>
             </div>
         </header>
@@ -21,8 +22,9 @@ const App = () => (
         <AuthRoute exact path="/" component={SplashContainer}/>    
         <AuthRoute  exact path="/login" component={LoginSessionFormContainer}/>
         <AuthRoute  exact path="/signup" component={SignupSessionFormContainer}/>
-        <ProtectedRoute exact path="/map" component={CourseMap}/>
+        <ProtectedRoute exact path="/map" component={CreateCourseMap}/>
         <ProtectedRoute exact path="/dashboard" component={DashboardComponent}/>
+        <ProtectedRoute exact path="/courses/:courseId/edit" component={EditCourseMap}/>
         </Switch>
     </div>
 );
