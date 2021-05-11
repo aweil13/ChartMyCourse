@@ -1,5 +1,5 @@
 import React from 'react';
-
+import {redirect} from 'react-router-dom'
 
 class MapSideToolbar extends React.Component {
     constructor(props){
@@ -27,7 +27,8 @@ class MapSideToolbar extends React.Component {
          const course = this.state;
          course['waypoints'] = waypointsToJSON;
          course['distance'] = this.props.distance;
-         this.props.createCourse(course);
+         this.props.courseAction(course);
+         alert("Course created succesfully");
         } else {
             alert('You must select at least two points on the map to create a course!')
         }

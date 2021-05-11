@@ -24,6 +24,7 @@ class EditCourseMap extends React.Component {
     render(){
         const {course, errors, type, updateCourse, clearCourseErrors} = this.props;
         if (!course) return null;
+        debugger;
         return (
             <CourseMap
               course={course}
@@ -44,7 +45,7 @@ const mSTP = (state, ownProps) => ({
 
 const mDTP = dispatch => ({
     requestCourse: courseId => dispatch(requestCourse(courseId)),
-    updateCourse: course => dispatch(updateCourse(course)),
+    courseAction: course => dispatch(updateCourse(course)),
     clearCourseErrors: () => dispatch(clearCourseErrors())
 })
 

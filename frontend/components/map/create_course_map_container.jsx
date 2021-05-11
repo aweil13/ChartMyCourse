@@ -16,7 +16,7 @@ const mSTP = ({entities, session, errors}) => ({
 })
 
 const mDTP = dispatch => ({
-    createCourse: course => dispatch(createCourse(course)),
+    courseAction: course => dispatch(createCourse(course)),
     clearCourseErrors: () => dispatch(clearCourseErrors())
 });
 

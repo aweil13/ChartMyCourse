@@ -21,6 +21,7 @@ class CourseMap extends React.Component{
             this.state.waypoints = JSON.parse(this.state.waypoints);
         }
 
+        this.createMap = this.createMap.bind(this);
         this.createWaypoint = this.createWaypoint.bind(this);
         this.clearMarkers = this.clearMarkers.bind(this);
         this.renderRoutes = this.renderRoutes.bind(this);
@@ -29,7 +30,6 @@ class CourseMap extends React.Component{
         this.updateDistance = this.updateDistance.bind(this);
         
         this.currentWaypoints = this.state.waypoints;
-        this.distanceString = this.state.distance;
     }
     
     componentDidMount(){
@@ -38,7 +38,8 @@ class CourseMap extends React.Component{
         if (this.state.waypoints.length > 0) 
         {this.renderRoutes();}
     };
-    
+
+
    componentWillUnmount(){
        this.props.clearCourseErrors();
    }
@@ -95,7 +96,7 @@ class CourseMap extends React.Component{
     }
 
     returnToOrigin(){
-        if (this.currentWaypoints.length > 1){
+        if (this.state.waypoints.length > 1){
             this.currentWaypoints.push(this.currentWaypoints[0]);
             this.renderRoutes();
         }
@@ -119,9 +120,9 @@ class CourseMap extends React.Component{
                     creator_id={this.state.creator_id}
                     description={this.state.description}
                     distance={this.state.distance}
-                    waypoints={this.state.waypoints}
+                    waypoints={this.currentWaypoints}
                     errors={this.props.errors}
-                    createCourse={this.props.createCourse}
+                    courseAction={this.props.courseAction}
                     clearCourseErrors={this.props.clearCourseErrors}
                     type={this.props.type}
                     />
