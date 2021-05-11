@@ -22,9 +22,9 @@ const App = () => (
         <AuthRoute exact path="/" component={SplashContainer}/>    
         <AuthRoute  exact path="/login" component={LoginSessionFormContainer}/>
         <AuthRoute  exact path="/signup" component={SignupSessionFormContainer}/>
+        <ProtectedRoute exact path="/courses/:courseId/edit" component={EditCourseMap}/>
         <ProtectedRoute exact path="/map" component={CreateCourseMap}/>
         <ProtectedRoute exact path="/dashboard" component={DashboardComponent}/>
-        <ProtectedRoute exact path="/courses/:courseId/edit" component={EditCourseMap}/>
         </Switch>
     </div>
 );

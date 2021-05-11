@@ -39,7 +39,6 @@ class EditCourseMap extends React.Component {
 const mSTP = (state, ownProps) => ({
     course: state.entities.courses[ownProps.match.params.courseId],
     errors: state.errors.course,
-    currentUser: state.entities.users[state.session.id],
     type: 'edit'
 })
 

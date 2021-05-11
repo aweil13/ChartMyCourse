@@ -3,33 +3,40 @@ import Footer from '../footer/footer';
 import ButtonToolbar from './toolbars/button_toolbar';
 import MapSideToolbar from './toolbars/map_side_toolbar';
 
-const NEW_YORK = {
-    center: {
-        lat: 40.785091,
-        lng: -73.968285
-    },
-    zoom: 14
-};
+// const NEW_YORK = {
+//     center: {
+//         lat: 40.785091,
+//         lng: -73.968285
+//     },
+//     zoom: 14
+// };
 
 class CourseMap extends React.Component{
     constructor(props){
         super(props);
+
         this.state = this.props.course;
+        
         if (this.state.waypoints.length > 0){
             this.state.waypoints = JSON.parse(this.state.waypoints);
         }
 
-        this.currentWaypoints = this.state.waypoints;
         this.createWaypoint = this.createWaypoint.bind(this);
         this.clearMarkers = this.clearMarkers.bind(this);
         this.renderRoutes = this.renderRoutes.bind(this);
         this.undoWaypoint = this.undoWaypoint.bind(this);
         this.returnToOrigin = this.returnToOrigin.bind(this);
         this.updateDistance = this.updateDistance.bind(this);
+        
+        this.currentWaypoints = this.state.waypoints;
+        this.distanceString = this.state.distance;
     }
+    
     componentDidMount(){
         this.createMap();
-        if (this.currentWaypoints.length > 0){ this.renderRoutes();}
+
+        if (this.state.waypoints.length > 0) 
+        {this.renderRoutes();}
     };
     
    componentWillUnmount(){
@@ -37,7 +44,10 @@ class CourseMap extends React.Component{
    }
 
     createMap(){
-        this.map = new google.maps.Map(this.mapNode, NEW_YORK);
+        const newYork = new google.maps.LatLng(40.785091, -73.968285);
+        const center = this.state.waypoints.length > 0 ? this.state.waypoints[0] : newYork;
+        const mapOptions = {center, zoom: 13}
+        this.map = new google.maps.Map(this.mapNode, mapOptions);
         this.map.addListener('click', this.createWaypoint);
     }
 
@@ -64,8 +74,8 @@ class CourseMap extends React.Component{
 
         this.directionsService.route(initialWaypoint, (result, status) => {
             if (status === 'OK') {
-                this.updateDistance(result);
                 this.directionsDisplay.setDirections(result);
+                this.updateDistance(result);
             }
         });
         this.setState({waypoints: this.currentWaypoints.slice()});
