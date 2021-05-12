@@ -1,4 +1,11 @@
 class Api::UsersController < ApplicationController
+  before_action :require_logged_in, only: [:index]
+
+
+    def index
+      @users = User.all
+      render :index
+    end
 
     def create
         @user = User.new(user_params)
