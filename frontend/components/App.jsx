@@ -8,6 +8,7 @@ import SplashContainer from './splash/splash_container';
 import CreateCourseMap from './map/create_course_map_container';
 import EditCourseMap from './map/edit_course_map_container';
 import DashboardComponent from '../components/dashboard/dashboard_container';
+import UsersList from '../components/users_list/users_list';
 
 const App = () => (
     <div>
@@ -25,6 +26,7 @@ const App = () => (
         <ProtectedRoute exact path="/courses/:courseId/edit" component={EditCourseMap}/>
         <ProtectedRoute exact path="/map" component={CreateCourseMap}/>
         <ProtectedRoute exact path="/dashboard" component={DashboardComponent}/>
+        <ProtectedRoute exact path='/users' component={UsersList}/>
         </Switch>
     </div>
 );

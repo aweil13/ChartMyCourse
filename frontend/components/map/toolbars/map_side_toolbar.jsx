@@ -79,7 +79,8 @@ class MapSideToolbar extends React.Component {
                           className='sidebar-input'  
                         />
                     </div>      
-                    <button className='create-course-button'>Create Course</button>
+                    { this.props.type === 'edit' ? <button className='create-course-button'>Edit Course</button> :
+                    <button className='create-course-button'>Create Course</button>}
                 </form>
             </div>
         )

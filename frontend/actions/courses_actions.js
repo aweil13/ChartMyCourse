@@ -46,7 +46,7 @@ export const createCourse = course => dispatch => (
     CourseAPIUtil.createCourse(course).then(course => (
         dispatch(receiveCourse(course))
     ), err => (
-        dispatch(receiveCourseErrors(err))
+        dispatch(receiveCourseErrors(err.responseJSON))
     ))
 );
 
