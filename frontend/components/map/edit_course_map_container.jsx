@@ -8,27 +8,39 @@ import React from 'react';
 class EditCourseMap extends React.Component {
     constructor(props){
         super(props)
+        this.state = {course: null};
     }
 
 
     componentDidMount(){
-        this.props.requestCourse(this.props.match.params.courseId);
+        // debugger;
+        if (!this.state.course){
+            this.props.requestCourse(this.props.match.params.courseId)
+            .then(
+            this.setState({course: this.props.course})
+            )
+        } else {
+        this.setState({course: this.props.course})}
     }
 
     componentDidUpdate(prevProps){
-        if(prevProps.match.params.courseId !== this.props.match.params.courseId){
-            this.props.requestCourse(this.props.match.params.courseId)
+        // if (prevProps.course !== this.props.course){
+        //     this.setState({course: this.props.course});
+        // }
+        if (prevProps.match.params.courseId !== this.props.match.params.courseId){
+            this.props.requestCourse(this.props.match.params.courseId);
+            this.setState({course: this.props.course})
         }
     }
 
     render(){
-        const {course, errors, type, updateCourse, clearCourseErrors} = this.props;
-        if (!course) return null;
-        debugger;
+        const { errors, type, courseAction, clearCourseErrors} = this.props;
+        // debugger;
+        if (!this.state.course) return null;
         return (
             <CourseMap
-              course={course}
-              updateCourse={updateCourse}
+              course={this.state.course}
+              courseAction={courseAction}
               clearCourseErrors={clearCourseErrors}
               errors={errors}
               type={type}

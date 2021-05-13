@@ -1,5 +1,5 @@
 import React from 'react';
-import {redirect} from 'react-router-dom'
+
 
 class MapSideToolbar extends React.Component {
     constructor(props){
@@ -10,8 +10,10 @@ class MapSideToolbar extends React.Component {
             name: this.props.name,
             description: this.props.description,
             waypoints: this.props.waypoints,
-            distance: this.props.distance
+            distance: this.props.distance,
+            id: this.props.course_id
         }
+
         this.update = this.update.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
     }
@@ -22,6 +24,7 @@ class MapSideToolbar extends React.Component {
 
     handleSubmit(e){
         e.preventDefault();
+        debugger;
         if (this.state.waypoints.length > 1){
          const waypointsToJSON = JSON.stringify(this.props.waypoints);
          const course = this.state;

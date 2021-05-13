@@ -17,9 +17,9 @@ class CourseMap extends React.Component{
 
         this.state = this.props.course;
         
-        if (this.state.waypoints.length > 0){
-            this.state.waypoints = JSON.parse(this.state.waypoints);
-        }
+        // if (this.state.waypoints.length > 0){
+        //     this.state.waypoints = JSON.parse(this.state.waypoints);
+        // }
 
         this.createMap = this.createMap.bind(this);
         this.createWaypoint = this.createWaypoint.bind(this);
@@ -28,14 +28,19 @@ class CourseMap extends React.Component{
         this.undoWaypoint = this.undoWaypoint.bind(this);
         this.returnToOrigin = this.returnToOrigin.bind(this);
         this.updateDistance = this.updateDistance.bind(this);
-        
         this.currentWaypoints = this.state.waypoints;
+        
     }
     
     componentDidMount(){
+        if (this.props.course.waypoints.length > 0) {
+            let course = this.props.course;
+            course.waypoints = JSON.parse(course.waypoints);
+            this.setState({course});
+            this.currentWaypoints = this.state.waypoints;
+        }
         this.createMap();
-
-        if (this.state.waypoints.length > 0) 
+        if (this.props.course.waypoints.length > 0) 
         {this.renderRoutes();}
     };
 
@@ -112,10 +117,12 @@ class CourseMap extends React.Component{
     }
 
     render(){
+        if (!this.state){return null;}
         return(
         <div>
             <div className='map-container'> 
                    <MapSideToolbar
+                    course_id={this.state.id}
                     name={this.state.name}
                     creator_id={this.state.creator_id}
                     description={this.state.description}
