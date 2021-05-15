@@ -16,6 +16,7 @@ const App = () => (
             <div className="navbar-components-container">
               <div className="logo"><Link to="/">Chart My Course</Link> </div>
               <Link to='/map'className='courses-link'>Create Courses</Link>
+              <Link to='/users'className='courses-link'>Add Friends</Link>
               <GreetingContainer/>
             </div>
         </header>

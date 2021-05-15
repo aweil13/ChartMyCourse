@@ -1,0 +1,64 @@
+.users-list-container{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 60%;
+    height: 760px;
+    background: rgb(226, 226, 226);
+}
+
+.users-title{
+    margin: 0 auto;
+    margin-top: 1%;
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 35px;
+    color: rgb(71, 71, 207);
+}
+
+.users-container{
+    margin: 0 auto;
+    margin-top: 5%;
+    // background: chartreuse;
+    height: 70%;
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.user-container{
+    width: 30%;
+    height: 100px;
+    // background: chocolate;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-right: 5%;
+    border: 6px solid blue;
+    justify-content: center;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Rubik Mono One', sans-serif;
+    border-radius: 10px;
+}
+
+.user-container span{
+    margin-top: 5%;
+}
+
+.add-friend-button{
+    width: 50%;
+    height: 30%;
+    margin: 0 auto;
+    background: green;
+    color: white;
+    margin-top: 5%;
+    border: none;
+    border-radius: 5px;
+}
+
+.add-friend-button:hover{
+    background: rgb(1, 58, 1);
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
