@@ -9,7 +9,7 @@ Rails.application.routes.draw do
         resources :friends, only: %i[index]
       end
 
-      resources :friends, only: %i[:create, :destroy]
+      resources :friends, only: %i[create destroy]
 
       resources :courses, only: %i[show create update destroy]
     end
