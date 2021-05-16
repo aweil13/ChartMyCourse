@@ -6,8 +6,11 @@ Rails.application.routes.draw do
       resource :session, only: %i[create destroy]
       resources :users, only: %i[create index show] do
         resources :courses, only: %i[index]
+        resources :friends, only: %i[index]
       end
-      
+
+      resources :friends, only: %i[:create, :destroy]
+
       resources :courses, only: %i[show create update destroy]
     end
 end
