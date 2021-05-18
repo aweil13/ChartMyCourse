@@ -15,6 +15,7 @@ class DashboardComponent extends React.Component {
 
     render(){
         const user = this.props.currentUser;
+        if (!user) {return null;}
         return (
             <>
               <div className='dashboard-container'>

@@ -1,4 +1,6 @@
 class Api::FriendsController < ApplicationController
+    before_action :require_logged_in, only: [:create, :index, :destroy]
+
 
     def index
         @friendships = Friend.where(user_id: params[:user_id])
@@ -8,7 +10,7 @@ class Api::FriendsController < ApplicationController
     def create
         @friend = Friend.new(friend_params)
         @friend.user_id = current_user.id
-
+        
         if @friend.save
             render :show
         else
@@ -20,7 +22,7 @@ class Api::FriendsController < ApplicationController
         @friend = Friend.find_by(id: params[:id])
         @user = current_user
 
-        if @user.id === @friend.user_id
+        if @user.id == @friend.user_id
             @friend.destroy
             render "api/users/show"    
         else

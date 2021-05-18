@@ -52,7 +52,7 @@ class CourseMap extends React.Component{
     createMap(){
         const newYork = new google.maps.LatLng(40.785091, -73.968285);
         const center = this.state.waypoints.length > 0 ? this.state.waypoints[0] : newYork;
-        const mapOptions = {center, zoom: 13}
+        const mapOptions = {center, zoom: 14}
         this.map = new google.maps.Map(this.mapNode, mapOptions);
         this.map.addListener('click', this.createWaypoint);
     }

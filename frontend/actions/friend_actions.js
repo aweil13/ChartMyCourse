@@ -3,7 +3,7 @@ import * as FriendsAPIUtil from '../util/friend_util';
 export const RECEIVE_FRIEND = 'RECEIVE_FRIEND';
 export const RECEIVE_ALL_FRIENDS = 'RECEIVE_ALL_FRIENDS';
 export const DELETE_FRIEND = 'DELETE_FRIEND';
-export const RECEIVE_FRIEND_ERRORS = 'RECEIVE_FRIEND_ERRROS';
+export const RECEIVE_FRIEND_ERRORS = 'RECEIVE_FRIEND_ERRORS';
 export const CLEAR_FRIEND_ERRORS = 'CLEAR_FRIEND_ERRORS';
 
 const receiveFriendErrors = errors => ({
