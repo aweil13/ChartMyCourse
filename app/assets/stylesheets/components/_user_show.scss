@@ -1,0 +1,33 @@
+.delete-friend-user-show-button{
+    width: 10%;
+    margin-left: 85%;  
+    height: 5%;
+    background: rgb(156, 0, 0);
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-size: 16px;
+}
+
+.add-friend-user-show-button{
+    width: 10%;
+    margin-left: 85%;  
+    height: 5%;
+    background: green;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-size: large;
+}
+
+.add-friend-user-show-button:hover{
+    cursor: pointer;
+    background: rgb(1, 77, 1);
+    transition-duration: 0.3s;
+}
+
+.delete-friend-user-show-button:hover{
+    cursor: pointer;
+    background: rgb(95, 0, 0);
+    transition-duration: 0.3s;
+}

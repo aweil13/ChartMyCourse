@@ -3,13 +3,15 @@ import {createFriend, removeFriend, requestUserFriends} from '../../actions/frie
 import {fetchUser} from '../../actions/users_actions';
 import {requestUserCourses} from '../../actions/courses_actions';
 import {connect} from 'react-redux';
+import Footer from '../footer/footer';
+import {Link} from 'react-router-dom'
 
-
-const mSTP = ({entities, errors, session}) => ({
+const mSTP = ({entities, errors, session}, ownProps) => ({
     userFriends: entities.friends,
     currentUserId: session.id,
     errors: errors,
-    users: entities.users
+    user: entities.users[ownProps.match.params.userId],
+    courses: entities.courses
 })
 
 const mDTP = dispatch => ({
@@ -24,6 +26,9 @@ const mDTP = dispatch => ({
 class UsersShow extends React.Component {
     constructor(props){
         super(props);
+
+        this.handleAddFriend = this.handleAddFriend.bind(this);
+        this.addOrDeleteFriendButton = this.addOrDeleteFriendButton.bind(this);
     }
 
     componentDidMount(){
@@ -35,14 +40,72 @@ class UsersShow extends React.Component {
     componentDidUpdate(prevProps){
         if (Object.values(this.props.userFriends).length !== Object.values(prevProps.userFriends).length){
             this.props.requestUserFriends(this.props.currentUserId);
+            this.props.requestCourses(this.props.match.params.userId);
+            this.props.fetchUser(this.props.match.params.userId);
         }
     }
 
+
+    handleAddFriend(){
+        const {user, currentUserId} = this.props;
+        this.props.createFriend({user_id: currentUserId, friend_id: user.id})
+    }
+
+    addOrDeleteFriendButton(){
+        const {userFriends, user} = this.props;
+        let friendId;
+
+        for (let key in userFriends){
+            if (userFriends[key].friend_id === user.id){
+                friendId = key;
+            }
+        }
+
+        if (friendId) {
+            return <button onClick={() => this.props.removeFriend(friendId)} className='delete-friend-user-show-button'>Delete Friend</button>
+        } else {return  <button onClick={this.handleAddFriend} className='add-friend-user-show-button' >Add Friend</button>}
+    }
+
+
     render(){
-        console.log(this.props);
-        const user = this.props.users[this.props.match.params.userId]
+        const user = this.props.user
+        if (!user) return null;
         return (
-            <div></div>
+            <>
+              <div className='dashboard-container'>
+                <div className='courses-container'>
+                    <div className='user-welcome-container'>
+                        <h1 className='user-welcome-message'>
+                          {user.first_name} {user.last_name}'s Dashboard
+                        </h1>
+                    </div>
+                    {this.addOrDeleteFriendButton()}
+                    <div className='courses-title-container'>
+                        <h2 className='courses-title'>
+                            Courses Created
+                        </h2>
+                    </div>
+                    <table className='courses-table'>
+                        <tr className='column-headers'>
+                            <th className='table-heading'>Course Name</th>       
+                            <th className='table-heading'>Course Description</th>       
+                            <th className='table-heading'>Course Distance</th>       
+                            <th className='table-heading'>View Course</th>       
+                        </tr>
+                        {Object.values(this.props.courses).length < 1 ? null : Object.values(this.props.courses).map(course => (
+                        <tr key={course.id} className='course-row'>
+                            <td>{course.name}</td>
+                            <td>{course.description}</td>
+                            <td className='course-distance-cell'>{course.distance}</td>
+                            <td className='edit-delete-block'>
+                                <Link to={`users/${user.id}/courses/${course.id}/show`} className='edit-delete-link'>View/Comment Course</Link>
+                            </td>
+                        </tr>))}
+                    </table>
+                </div>
+              </div>
+              <Footer/>
+            </>
         )
     }
 

@@ -7,10 +7,12 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 User.destroy_all
-
+Course.destroy_all
+Friend.destroy_all
 
 ApplicationRecord.connection.reset_pk_sequence!('users')
 ApplicationRecord.connection.reset_pk_sequence!('courses')
+ApplicationRecord.connection.reset_pk_sequence!('friends')
 
 User.create(username: "aweil13", password: "password", email: "ale13@gmail.com", birthdate: '1991/05/07', first_name: "Alejandro", last_name: "Weil", gender: "M", height: 180, weight: 85)
 User.create(username: "eripley4", password: "password", email: "ripley@weyland-yutani.org", birthdate: '1980/03/17', first_name: "Ellen", last_name: "Ripley", gender: "F", height: 165, weight: 50)
@@ -18,3 +20,5 @@ User.create(username: "arake1000", password: "password", email: "a_rake@gmail.co
 User.create(username: "benji23", password: "password", email: "benjamin_bradley@gmail.com", birthdate: '1981/07/17', first_name: "Benjamin", last_name: "Bradley", gender: "M", height: 171, weight: 60)
 User.create(username: "oceangirl89", password: "password", email: "adri_weil_89@gmail.com", birthdate: '1989/12/25', first_name: "Adriana", last_name: "Weil", gender: "F", height: 150, weight: 40)
 User.create(username: "stonmey", password: "password", email: "tonnys@gmail.com", birthdate: '1970/06/30', first_name: "Stonny", last_name: "Menackis", gender: "F", height: 160, weight: 43)
+User.create(username: "JJang89", password: "password", email: "jjang@gmail.com", birthdate: '1989/07/14', first_name: "Jiyoon", last_name: "Jang", gender: "F", height: 165, weight: 58)
+User.create(username: "PonBoodleJang", password: "password", email: "cbj@gmail.com", birthdate: '2019/03/10', first_name: "Chiffon", last_name: "Jang", gender: "M", height: 40, weight: 4)
