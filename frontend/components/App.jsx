@@ -10,6 +10,8 @@ import EditCourseMap from './map/edit_course_map_container';
 import DashboardComponent from '../components/dashboard/dashboard_container';
 import UsersList from '../components/users_list/users_list';
 import UsersShow from '../components/users/users_show';
+import FriendsDashboard from '../components/dashboard/dashboard_friends';
+
 
 const App = () => (
     <div>
@@ -28,6 +30,7 @@ const App = () => (
         <ProtectedRoute exact path="/courses/:courseId/edit" component={EditCourseMap}/>
         <ProtectedRoute exact path="/map" component={CreateCourseMap}/>
         <ProtectedRoute exact path="/dashboard" component={DashboardComponent}/>
+        <ProtectedRoute exact path="/dashboard/friends" component={FriendsDashboard}/>
         <ProtectedRoute exact path='/users' component={UsersList}/>
         <ProtectedRoute exact path='/users/:userId' component={UsersShow}/>
         </Switch>

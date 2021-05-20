@@ -8,7 +8,8 @@ class DashboardComponent extends React.Component {
     }
 
     componentDidMount(){
-        this.props.requestUserCourses(this.props.currentUser.id)
+        this.props.requestUserCourses(this.props.currentUser.id);
+        // this.props.requestUserFriends(this.props.currentUser.id);
     }
 
 

@@ -4,7 +4,8 @@ import DashboardContainer from './dashboard';
 
 const mSTP = ({session, entities}) => ({
     currentUser: entities.users[session.id],
-    courses: entities.courses
+    courses: entities.courses,
+    friends: entities.friends
 });
 
 const mDTP = dispatch => ({
