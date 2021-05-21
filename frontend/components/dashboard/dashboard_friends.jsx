@@ -59,7 +59,11 @@ class FriendsDashboard extends React.Component {
                                 Welcome {currentUser.first_name} {currentUser.last_name}
                             </h1>
                         </div>
-                            <span className='no-friends-message'> You don't have any friends. Click Add Friends above to find users to add as friends!</span>
+                        <Link to='/dashboard' className='dashboard-link-container'>
+                            <span className='friends-text'>Courses</span>
+                            <div  className='fas fa-route'></div>
+                        </Link>
+                        <span className='no-friends-message'> You don't have any friends. Click Add Friends above to find users to add as friends!</span>
                      </div>
                      <Footer/>
                 </>
@@ -73,6 +77,10 @@ class FriendsDashboard extends React.Component {
                             Welcome {currentUser.first_name} {currentUser.last_name}
                          </h1>
                     </div>
+                        <Link to='/dashboard' className='dashboard-link-container'>
+                            <span className='friends-text'>Courses</span>
+                            <div  className='fas fa-route'></div>
+                        </Link>
                     <h1 className='friends-title'>Friends</h1>
                     <div className='friends-container'>
                     { Object.values(friendships).map((friendship, i) => (
