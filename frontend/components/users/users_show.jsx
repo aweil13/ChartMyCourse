@@ -27,28 +27,48 @@ class UsersShow extends React.Component {
     constructor(props){
         super(props);
 
+        this.state = this.props.userFriends;
+
         this.handleAddFriend = this.handleAddFriend.bind(this);
+        this.handleDeleteFriend = this.handleDeleteFriend.bind(this);
         this.addOrDeleteFriendButton = this.addOrDeleteFriendButton.bind(this);
     }
 
     componentDidMount(){
-        this.props.requestUserFriends(this.props.currentUserId);
+        this.props.requestUserFriends(this.props.currentUserId).then(this.setState({userFriends: this.props.userFriends}));
         this.props.requestCourses(this.props.match.params.userId);
         this.props.fetchUser(this.props.match.params.userId);
     }
 
-    componentDidUpdate(prevProps){
+    componentDidUpdate(prevProps, prevState){
         if (Object.values(this.props.userFriends).length !== Object.values(prevProps.userFriends).length){
             this.props.requestUserFriends(this.props.currentUserId);
             this.props.requestCourses(this.props.match.params.userId);
             this.props.fetchUser(this.props.match.params.userId);
         }
+
     }
 
 
     handleAddFriend(){
         const {user, currentUserId} = this.props;
         this.props.createFriend({user_id: currentUserId, friend_id: user.id})
+        .then(this.props.requestUserFriends(this.props.currentUserId))
+    }
+
+    handleDeleteFriend(){
+        const {userFriends, user} = this.props;
+        let friendId;
+
+        for (let key in userFriends){
+            if (userFriends[key].friend_id === user.id){
+                friendId = key;
+            }
+        }
+        this.props.removeFriend(friendId)
+        .then(this.props.requestUserFriends(this.props.currentUserId))
+        alert("Unfriended")
+        console.log(this.props)
     }
 
     addOrDeleteFriendButton(){
@@ -62,14 +82,15 @@ class UsersShow extends React.Component {
         }
 
         if (friendId) {
-            return <button onClick={() => this.props.removeFriend(friendId)} className='delete-friend-user-show-button'>Delete Friend</button>
-        } else {return  <button onClick={this.handleAddFriend} className='add-friend-user-show-button' >Add Friend</button>}
+            return <button onClick={this.handleDeleteFriend} className='delete-friend-user-show-button'>Delete Friend</button>
+        } else {return  <button onClick={this.handleAddFriend} className='add-friend-user-show-button'>Add Friend</button>}
     }
 
 
     render(){
-        const user = this.props.user
-        if (!user) return null;
+    
+        const {user, userFriends} = this.props
+        if (!user || !userFriends) return null;
         return (
             <>
               <div className='dashboard-container'>

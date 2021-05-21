@@ -7,9 +7,9 @@ class DashboardComponent extends React.Component {
         super(props);
     }
 
-    componentDidMount(){
-        this.props.requestUserCourses(this.props.currentUser.id);
-        // this.props.requestUserFriends(this.props.currentUser.id);
+    componentDidMount(){     
+        this.props.requestUserCourses(this.props.id);
+            
     }
 
 
@@ -26,6 +26,10 @@ class DashboardComponent extends React.Component {
                             Welcome {user.first_name} {user.last_name}
                         </h1>
                     </div>
+                    <Link to='/dashboard/friends' className='friends-link-container'>
+                        <span className='friends-text'>Friends</span>
+                        <div to='/dashboard/friends' className='fas fa-user-friends'></div>
+                    </Link>
                     <div className='courses-title-container'>
                         <h2 className='courses-title'>
                             Courses Created
