@@ -6,9 +6,9 @@ import { connect } from 'react-redux';
 import Footer from '../footer/footer';
 
 const mSTP = ({entities, session}) => ({
-    currentUserId: session.id,
+    currentUser: entities.users[session.id],
     friendships: entities.friends,
-    friends: entities.users.userFriends
+    friends: entities.users['userFriends']
 })
 
 const mDTP = dispatch => ({
@@ -23,44 +23,42 @@ class FriendsDashboard extends React.Component {
     constructor(props){
         super(props);
 
-        this.friendsList = this.friendsList.bind(this);
+        this.handleRemoveFriend = this.handleRemoveFriend.bind(this);
+        
     }
 
     componentDidMount(){
-        this.props.fetchUserFriends(this.props.currentUserId);
-        this.props.requestUserFriends(this.props.currentUserId);
+        this.props.fetchUserFriends(this.props.currentUser.id);
+        this.props.requestUserFriends(this.props.currentUser.id);
     }
 
     // componentDidUpdate(prevProps){
-    //     if (Object.values(this.props.friends).length !== Object.values(prevProps.friends).length){
+    //     if (Object.values(this.props.friendships).length !== Object.values(prevProps.friendships).length){
     //         this.props.requestUserFriends(this.props.currentUserId);
     //     }
     // }
 
-    friendsList(){
-        const {friends, friendships} = this.props;
-
-        Object.values(friendships).map((friendship, i) => (
-          <div className='friendship-container' key={i}>
-              <div className='friend-names-container'>
-                <span>{friends[friendship.friend_id].username}</span>
-                <span>{friends[friendship.friend_id].first_name} {friends[friendship.friend_id].last_name}</span>
-              </div>
-              <Link to={`/users/${friends[friendship.friend_id].id}`} className='friend-dashboard-link'>View Course</Link>
-              <button onClick={() => this.props.removeFriend(friendship.id)} className='unfriend-button'>UNFRIEND</button>
-          </div> 
-        ))    
-
+    handleRemoveFriend(friendId){
+        this.props.removeFriend(friendId);
+        alert("Unfriended!")
+        this.props.fetchUserFriends(this.props.currentUser.id)
+        this.props.requestUserFriends(this.props.currentUser.id)
     }
 
-
     render(){
-        const {friendships} = this.props;
-
-        if (Object.values(friendships).length === 0){
+        const {friendships, friends, currentUser} = this.props;
+        console.log(friendships);
+        console.log(friends)
+        if (!friends){return null;}
+        if (Object.values(friends).length === 0){
             return (
                 <>
                      <div className='friends-dashboard'>
+                        <div className='user-welcome-container'>
+                            <h1 className='user-welcome-message'>
+                                Welcome {currentUser.first_name} {currentUser.last_name}
+                            </h1>
+                        </div>
                             <span className='no-friends-message'> You don't have any friends. Click Add Friends above to find users to add as friends!</span>
                      </div>
                      <Footer/>
@@ -70,8 +68,22 @@ class FriendsDashboard extends React.Component {
         else {return(
             <>
                 <div className='friends-dashboard'>
+                    <div className='user-welcome-container'>
+                         <h1 className='user-welcome-message'>
+                            Welcome {currentUser.first_name} {currentUser.last_name}
+                         </h1>
+                    </div>
                     <h1 className='friends-title'>Friends:</h1>
-                    {this.friendsList()}
+                    {Object.values(friendships).map((friendship, i) => (
+                        <div className='friendship-container' key={i}>
+                             <div className='friend-names-container'>
+                                <span>{friends[friendship.friend_id].username}</span>
+                                <span>{friends[friendship.friend_id].first_name} {friends[friendship.friend_id].last_name}</span>
+                            </div>
+                            <Link to={`/users/${friends[friendship.friend_id].id}`} className='friend-dashboard-link'>View Courses</Link>
+                            <button onClick={() => this.handleRemoveFriend(friendship.id)} className='unfriend-button'>UNFRIEND</button>
+                        </div> 
+        ))    }
                 </div>
                 <Footer/>
             </>
