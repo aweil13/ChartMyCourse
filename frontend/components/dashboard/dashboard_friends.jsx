@@ -73,17 +73,21 @@ class FriendsDashboard extends React.Component {
                             Welcome {currentUser.first_name} {currentUser.last_name}
                          </h1>
                     </div>
-                    <h1 className='friends-title'>Friends:</h1>
-                    {Object.values(friendships).map((friendship, i) => (
+                    <h1 className='friends-title'>Friends</h1>
+                    <div className='friends-container'>
+                    { Object.values(friendships).map((friendship, i) => (
                         <div className='friendship-container' key={i}>
-                             <div className='friend-names-container'>
+                             <div className='friend-name-container'>
                                 <span>{friends[friendship.friend_id].username}</span>
-                                <span>{friends[friendship.friend_id].first_name} {friends[friendship.friend_id].last_name}</span>
                             </div>
-                            <Link to={`/users/${friends[friendship.friend_id].id}`} className='friend-dashboard-link'>View Courses</Link>
+                            <Link to={`/users/${friends[friendship.friend_id].id}`} className='user-dashboard-link'>
+                            <span  className='courses-text'>Courses</span>
+                            <div  className='fas fa-running'></div>
+                            </Link>
                             <button onClick={() => this.handleRemoveFriend(friendship.id)} className='unfriend-button'>UNFRIEND</button>
                         </div> 
-        ))    }
+                    ))}
+                    </div>
                 </div>
                 <Footer/>
             </>
