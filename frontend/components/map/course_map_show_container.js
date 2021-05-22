@@ -1,11 +1,21 @@
 import {connect} from 'react-redux';
 import {requestCourse} from '../../actions/courses_actions';
+import {requestCourseComments, createComment, deleteComment} from '../../actions/comment_actions';
+import {clearCommentErrors} from '../../actions/comment_actions';
 import CourseMapShow from './course_map_show';
 
-const mSTP = ({entities}) => {
-    
-}
+const mSTP = ({entities, session}) => ({
+    currentUser: entities.users[session.id],
+    course: entities.courses,
+    comments: entities.comments
+})
 
 const mDTP = dispatch => ({
-    requestCourse: courseId => dispatch(requestCourse(courseId))
+    requestCourse: courseId => dispatch(requestCourse(courseId)),
+    requestCourseComments: courseId => dispatch(requestCourseComments(courseId)),
+    deleteComment: commentId => dispatch(deleteComment(commentId)),
+    createComment: comment => dispatch(createComment(comment)),
+    clearCommentErrors: () => dispatch(clearCommentErrors())
 })
+
+export default connect(mSTP, mDTP)(CourseMapShow);

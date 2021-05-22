@@ -2,7 +2,7 @@ class Api::CommentsController < ApplicationController
     before_action :require_logged_in, only: [:create, :destroy, :update]    
 
     def index
-        @comments = Comment.where(route_id: params[:route_id])
+        @comments = Comment.where(course_id: params[:course_id])
         render :index
     end
 
@@ -50,7 +50,7 @@ class Api::CommentsController < ApplicationController
 
 
     def comment_params
-        params.require(:comment).permit(:route_id, :body, :author_id)
+        params.require(:comment).permit(:course_id, :body, :author_id, :username)
     end
 
 

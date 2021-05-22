@@ -1,6 +1,6 @@
 class Comment < ApplicationRecord
 
-validates_presence_of :author_id, :body, :course_id
+validates_presence_of :author_id, :body, :course_id, :username
 
 
 belongs_to :user,

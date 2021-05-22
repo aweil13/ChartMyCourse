@@ -30,7 +30,7 @@ const clearCommentErrors = () => ({
     type: CLEAR_COMMENT_ERRORS
 })
 
-export const requestComments = courseId => dispatch => (
+export const requestCourseComments = courseId => dispatch => (
     CommentAPIUtil.fetchCourseComments(courseId)
     .then(comments => (dispatch(receiveCourseComments(comments)))
     , err => dispatch(receiveCommentErrors(err.responseJSON)))

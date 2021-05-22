@@ -5,6 +5,13 @@ class CourseMapShow extends React.Component{
     constructor(props){
         super(props);
     }
+
+    componentDidMount(){
+        
+    }
+
+
+
 }
 
 export default CourseMapShow;
