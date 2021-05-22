@@ -119,7 +119,7 @@ class UsersShow extends React.Component {
                             <td>{course.description}</td>
                             <td className='course-distance-cell'>{course.distance}</td>
                             <td className='edit-delete-block'>
-                                <Link to={`users/${user.id}/courses/${course.id}/show`} className='edit-delete-link'>View/Comment Course</Link>
+                                <Link to={`/courses/${course.id}/show`} className='edit-delete-link'>View/Comment Course</Link>
                             </td>
                         </tr>))}
                     </table>

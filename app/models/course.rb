@@ -4,6 +4,8 @@ class Course < ApplicationRecord
     belongs_to :user,
     foreign_key: :creator_id
     
-    
+    has_many :comments,
+    foreign_key: :course_id,
+    class_name: :Comment
 
 end

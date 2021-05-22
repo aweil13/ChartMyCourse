@@ -13,7 +13,9 @@ Rails.application.routes.draw do
       end
 
       resources :friends, only: %i[create destroy]
-
-      resources :courses, only: %i[show create update destroy]
+      resources :comments, only: %i[create destroy update]
+      resources :courses, only: %i[show create update destroy] do
+        resources :comments, only: %i[index]
+      end
     end
 end

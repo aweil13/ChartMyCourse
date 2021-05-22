@@ -38,5 +38,12 @@ class User < ApplicationRecord
         has_many :courses,
         foreign_key: :creator_id
 
+        has_many :friends,
+        class_name: :Friend,
+        foreign_key: :user_id
+
+        has_many :comments,
+        foreign_key: :author_id,
+        class_name: :Comment
 
 end
