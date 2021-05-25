@@ -33,7 +33,7 @@ class FriendsDashboard extends React.Component {
     }
 
     // componentDidUpdate(prevProps){
-    //     if (Object.values(this.props.friendships).length !== Object.values(prevProps.friendships).length){
+    //     if (Object.values(this.props.friends).length !== Object.values(prevProps.friends).length){
     //         this.props.requestUserFriends(this.props.currentUserId);
     //     }
     // }
@@ -47,9 +47,8 @@ class FriendsDashboard extends React.Component {
 
     render(){
         const {friendships, friends, currentUser} = this.props;
-        console.log(friendships);
-        console.log(friends)
-        if (!friends){return null;}
+
+        if (!friends || !friendships){return null;}
         if (Object.values(friends).length === 0){
             return (
                 <>
