@@ -31,6 +31,8 @@ class MapSideToolbar extends React.Component {
          course['distance'] = this.props.distance;
          this.props.courseAction(course);
          alert("Course created succesfully");
+         this.setState({name: '', description: ''})
+         this.props.clearMarkers();
         } else {
             alert('You must select at least two points on the map to create a course!')
         }

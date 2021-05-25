@@ -132,6 +132,7 @@ class CourseMap extends React.Component{
                     courseAction={this.props.courseAction}
                     clearCourseErrors={this.props.clearCourseErrors}
                     type={this.props.type}
+                    clearMarkers={this.clearMarkers}
                     />
             <div ref={map => this.mapNode = map} id='map'/>
                 <ButtonToolbar
