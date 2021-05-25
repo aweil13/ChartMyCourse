@@ -42,14 +42,12 @@
 }
 
 .no-comments-message{
-    background: chartreuse;
     font-size: 50px;
     font-family: 'Rubik Mono One', sans-serif;
     text-align: center;
 }
 
-.comments-container{
-    background: chartreuse;
+.comments-container{  
     width: 90%;
     height: 60%;
     margin: 0 auto;
@@ -60,11 +58,11 @@
 .comment-container{
     display: flex;
     flex-direction: column;
+    background: rgb(206, 206, 206);
     height: 25%;
     width: 30%;
     margin: 0 auto;
     margin-top: 1%;
-    background: chocolate;
     border: 2px solid #6e7491;
     border-top-left-radius: 30px 90px;
     border-top-right-radius: 30px 90px;
@@ -82,10 +80,65 @@
 
 
 .comment-body{
-    background: cornflowerblue;
     margin: 0 auto;
     margin-top: 3%;
     height: 70%;
     width: 80%;
     text-align: center;
+}
+
+.create-comment-container{
+    background: rgb(206, 206, 206);
+    margin: 0 auto;
+    width: 40%;
+    height: 15%;
+    border: 3px solid gray;
+    border-radius: 40px;
+}
+
+.comment-toolbar-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.fa-comment-medical{
+    margin: 0 auto;
+    margin-top: 1%;
+    font-size: 20px;
+    color: green;
+}
+
+.comment-body-input{
+    margin: 0 auto;
+    margin-top: 2%;
+    width: 20%;
+    border: 2px solid grey;
+    border-radius: 5px;
+    padding: 2px;
+    transition: width 0.4s ease-in-out;
+}
+
+.comment-body-input:focus{
+    width: 70%;
+    background-color: rgb(185, 225, 238);
+}
+
+.add-comment-button{
+    width: 20%;
+    height: 20px;
+    margin: 0 auto;
+    margin-top: 5%;
+    font-family: 'Times New Roman', Times, serif; 
+    font-weight: bold;
+    font-size: 11px;
+    background: green;
+    color: white;
+    letter-spacing: 1px;
+    border: none;
+    border-radius: 10px;
+}
+
+.add-comment-button:hover{
+    cursor: pointer;
+    background: rgb(0, 73, 0);
 }

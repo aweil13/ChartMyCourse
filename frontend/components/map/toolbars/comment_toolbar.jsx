@@ -34,7 +34,7 @@ class CommentToolbar extends React.Component {
                         onChange={this.update('body')}
                         className='comment-body-input'
                     />
-                    <button className='add-comment-button'>Add Comment</button>
+                    <button className='add-comment-button'>Comment</button>
                 </form>
             </div>
         )
