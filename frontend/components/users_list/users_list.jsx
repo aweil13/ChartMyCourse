@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import {fetchAllUsers} from '../../actions/users_actions';
 import {requestUserFriends, createFriend, removeFriend, clearFriendErrors} from '../../actions/friend_actions';
+import {fetchUserFriends} from '../../actions/users_actions';
 import Footer from '../footer/footer';
 
 const mSTP = ({entities, session, errors}) => ({
@@ -17,7 +18,8 @@ const mDTP = dispatch => ({
     requestUserFriends: userId => dispatch(requestUserFriends(userId)),
     createFriend: friend => dispatch(createFriend(friend)),
     removeFriend: friendId => dispatch(removeFriend(friendId)),
-    clearFriendErrors: () => dispatch(clearFriendErrors())
+    clearFriendErrors: () => dispatch(clearFriendErrors()),
+    fetchUserFriends: userId=> dispatch(fetchUserFriends(userId))
 })
 
 class UsersList extends React.Component {
@@ -41,6 +43,8 @@ class UsersList extends React.Component {
 
     addFriend(userId, friendId){
         this.props.createFriend({user_id: userId, friend_id: friendId})
+        .then(() => this.props.fetchUserFriends(this.props.currentUser.id));
+        
         alert(`Friend Added!`);
     }
 

@@ -39,15 +39,18 @@ class FriendsDashboard extends React.Component {
     // }
 
     handleRemoveFriend(friendId){
-        this.props.removeFriend(friendId);
+        this.props.removeFriend(friendId).then(() => {
+            this.props.fetchUserFriends(this.props.currentUser.id);
+            this.props.requestUserFriends(this.props.currentUser.id);
+        }
+        );
+        
         alert("Unfriended!")
-        this.props.fetchUserFriends(this.props.currentUser.id)
-        this.props.requestUserFriends(this.props.currentUser.id)
     }
 
     render(){
         const {friendships, friends, currentUser} = this.props;
-
+        debugger;
         if (!friends || !friendships){return null;}
         if (Object.values(friends).length === 0){
             return (
