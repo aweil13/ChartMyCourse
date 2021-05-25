@@ -10,6 +10,7 @@
     <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=#{ENV['MAPS_API_KEY']}" %>
     <script src="https://kit.fontawesome.com/572001cbb3.js" crossorigin="anonymous"></script>
     <%= stylesheet_link_tag    'application', media: 'all' %> <%= csrf_meta_tags %>
+    <%= favicon_link_tag asset_path('favicon.ico')%>
     <%= javascript_include_tag 'application' %>
   </head>
 
