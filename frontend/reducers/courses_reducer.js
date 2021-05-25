@@ -7,7 +7,7 @@ const coursesReducer = (state = {}, action) => {
         case RECEIVE_USER_COURSES:
             return action.courses
         case RECEIVE_COURSE:
-            return action.course;
+            return Object.assign({}, state, {[action.course.id]: action.course});
         case REMOVE_COURSE:
             delete nextState[action.courseId]
             return nextState;

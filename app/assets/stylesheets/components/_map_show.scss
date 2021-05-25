@@ -1,0 +1,55 @@
+.map-show-container{
+    display: flex;
+}
+
+.comments-info-container{
+    width: 45%;
+    height: 750px;
+    background: salmon;
+    margin-top: 2%;
+}
+
+.course-info-container{
+    background: skyblue;
+    width: 70%;
+    height: 20%;
+    margin: 0 auto;
+}
+
+.course-name{
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Rubik Mono One', sans-serif;
+    text-transform: uppercase;
+    color: blue;
+    font-size: 30px;
+}
+
+.course-distance{
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 2%;
+    font-size: 16px;
+    font-family: 'Rubik Mono One', sans-serif;
+}
+
+.course-description{
+    margin: 0 auto;
+    margin-top: 2%;
+    font-size: 15px;
+    font-family: 'Rubik Mono One', sans-serif;
+}
+
+.no-comments-message{
+    background: chartreuse;
+    font-size: 50px;
+    font-family: 'Rubik Mono One', sans-serif;
+    text-align: center;
+}
+
+.comments-container{
+    background: chartreuse;
+    width: 90%;
+    height: 60%;
+    margin: 0 auto;
+}

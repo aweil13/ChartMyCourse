@@ -11,7 +11,7 @@ import DashboardComponent from '../components/dashboard/dashboard_container';
 import UsersList from '../components/users_list/users_list';
 import UsersShow from '../components/users/users_show';
 import FriendsDashboard from '../components/dashboard/dashboard_friends';
-
+import CourseMapShow from '../components/map/course_map_show_container';
 
 const App = () => (
     <div>
@@ -33,6 +33,7 @@ const App = () => (
         <ProtectedRoute exact path="/dashboard/friends" component={FriendsDashboard}/>
         <ProtectedRoute exact path='/users' component={UsersList}/>
         <ProtectedRoute exact path='/users/:userId' component={UsersShow}/>
+        <ProtectedRoute exact path='/courses/:courseId' component={CourseMapShow}/>
         </Switch>
     </div>
 );

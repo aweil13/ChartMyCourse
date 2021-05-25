@@ -41,7 +41,7 @@ class Api::CommentsController < ApplicationController
                 render json: @comment.errors.full_messages, status: 422
             end
         else
-            json: ['Comment could not be found'], status: 404
+           render json: ['Comment could not be found'], status: 404
         end
     end
 

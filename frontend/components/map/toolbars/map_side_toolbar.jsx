@@ -24,7 +24,6 @@ class MapSideToolbar extends React.Component {
 
     handleSubmit(e){
         e.preventDefault();
-        debugger;
         if (this.state.waypoints.length > 1){
          const waypointsToJSON = JSON.stringify(this.props.waypoints);
          const course = this.state;

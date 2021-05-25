@@ -4,9 +4,9 @@ import {requestCourseComments, createComment, deleteComment} from '../../actions
 import {clearCommentErrors} from '../../actions/comment_actions';
 import CourseMapShow from './course_map_show';
 
-const mSTP = ({entities, session}) => ({
+const mSTP = ({entities, session}, ownProps) => ({
     currentUser: entities.users[session.id],
-    course: entities.courses,
+    course: entities.courses[ownProps.match.params.courseId] ? entities.courses[ownProps.match.params.courseId] : entities.courses,
     comments: entities.comments
 })
 

@@ -26,7 +26,7 @@ const receiveCommentErrors = errors => ({
     errors
 })
 
-const clearCommentErrors = () => ({
+export const clearCommentErrors = () => ({
     type: CLEAR_COMMENT_ERRORS
 })
 
