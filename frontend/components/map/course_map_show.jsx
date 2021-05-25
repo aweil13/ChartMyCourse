@@ -17,7 +17,7 @@ class CourseMapShow extends React.Component{
     }
 
     componentDidUpdate(prevProps){
-        if (!this.props.course){
+        if (Object.values(this.props.comments).length !== Object.values(prevProps.comments).length){
             this.props.requestCourseComments(this.props.match.params.courseId);
             this.props.requestCourse(this.props.match.params.courseId);
         }
