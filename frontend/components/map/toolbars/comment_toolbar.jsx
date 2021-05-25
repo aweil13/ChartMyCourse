@@ -32,7 +32,7 @@ class CommentToolbar extends React.Component {
                     <input type="text" 
                         value={this.state.body}
                         onChange={this.update('body')}
-                        className='comment-body'
+                        className='comment-body-input'
                     />
                     <button className='add-comment-button'>Add Comment</button>
                 </form>
