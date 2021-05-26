@@ -12,7 +12,8 @@ ChartMyCourse is a premier running or walking exercise web application where you
 [Link](https://chart-my-course.herokuapp.com/#/)
 
 ## Technologies Used
-* Google maps API
+* Google Maps JavaScript API
+* Directions API
 * Postgresql database
 * Single page application, built with Ruby on Rails and React/Redux
 
@@ -24,5 +25,4 @@ ChartMyCourse is a premier running or walking exercise web application where you
 
 
 
-* Course creating and saving functionality coming soon.
-* Friending and commenting functionality coming soon.
+
