@@ -49,6 +49,7 @@ class CourseMap extends React.Component{
        this.props.clearCourseErrors();
    }
 
+//  Create Map using Google Maps API with either Central Park or a previously saved routes first point as its center. 
     createMap(){
         const newYork = new google.maps.LatLng(40.785091, -73.968285);
         const center = this.state.waypoints.length > 0 ? this.state.waypoints[0] : newYork;
