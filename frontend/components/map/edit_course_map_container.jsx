@@ -13,7 +13,7 @@ class EditCourseMap extends React.Component {
 
 
     componentDidMount(){
-        // debugger;
+        
         if (!this.state.course){
             this.props.requestCourse(this.props.match.params.courseId)
             .then(
@@ -24,9 +24,7 @@ class EditCourseMap extends React.Component {
     }
 
     componentDidUpdate(prevProps){
-        // if (prevProps.course !== this.props.course){
-        //     this.setState({course: this.props.course});
-        // }
+     
         if (prevProps.match.params.courseId !== this.props.match.params.courseId){
             this.props.requestCourse(this.props.match.params.courseId);
             this.setState({course: this.props.course})
@@ -35,7 +33,7 @@ class EditCourseMap extends React.Component {
 
     render(){
         const { errors, type, courseAction, clearCourseErrors} = this.props;
-        // debugger;
+        
         if (!this.state.course) return null;
         return (
             <CourseMap
