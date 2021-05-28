@@ -1,4 +1,5 @@
 import React from 'react'
+import { requestCourseComments } from '../../actions/comment_actions';
 import Footer from '../footer/footer';
 import CommentToolbar from './toolbars/comment_toolbar';
 
@@ -10,7 +11,8 @@ class CourseMapShow extends React.Component{
 
         this.createMap = this.createMap.bind(this);
         this.renderRoutes = this.renderRoutes.bind(this);
-        
+        this.removeComment = this.removeComment.bind(this);
+
         if (!this.state.waypoints){
         this.courseWaypoints = [];}
         else {this.courseWaypoints = JSON.parse(this.state.waypoints)};
@@ -44,14 +46,16 @@ class CourseMapShow extends React.Component{
         this.renderRoutes();
     }
 
-    // componentWillUnmount(){
-    //     this.props.clearCommentErrors();
-    // }
+
 
     createMap(){
         const center = this.courseWaypoints[0];
         const mapOptions = {center, zoom: 13};
         this.map = new google.maps.Map(this.mapNode, mapOptions);
+    }
+
+    removeComment(commentId){
+        this.props.deleteComment(commentId).then(() => {this.props.requestCourseComments(this.props.courseId)})
     }
 
     renderRoutes(){
@@ -80,7 +84,7 @@ class CourseMapShow extends React.Component{
 
     render(){
     
-        const {course, comments} = this.props;
+        const {course, comments, currentUser} = this.props;
         if (!course.waypoints) {return null;}
         return (
             <>
@@ -97,6 +101,10 @@ class CourseMapShow extends React.Component{
                                 <div className='comment-container' key={idx}>
                                     <span className='comment-username'>{comment.username} says:</span>
                                     <p className='comment-body'>{comment.body}</p>
+                                    <div className='comment-delete-container'>
+                                    {comment.author_id === currentUser.id ? <button onClick={() => this.removeComment(comment.id)} className='remove-comment-button'> DELETE</button>
+                                     : null}
+                                    </div>
                                 </div>
                             ))}
                         </div>

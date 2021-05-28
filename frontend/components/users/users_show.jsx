@@ -53,7 +53,7 @@ class UsersShow extends React.Component {
     handleAddFriend(){
         const {user, currentUserId} = this.props;
         this.props.createFriend({user_id: currentUserId, friend_id: user.id})
-        .then(this.props.requestUserFriends(this.props.currentUserId))
+        .then(() => {this.props.requestUserFriends(this.props.currentUserId)})
     }
 
     handleDeleteFriend(){
@@ -66,8 +66,7 @@ class UsersShow extends React.Component {
             }
         }
         this.props.removeFriend(friendId)
-        .then(this.props.requestUserFriends(this.props.currentUserId))
-        alert("Unfriended")
+        .then(() => {this.props.requestUserFriends(this.props.currentUserId)})
     }
 
     addOrDeleteFriendButton(){

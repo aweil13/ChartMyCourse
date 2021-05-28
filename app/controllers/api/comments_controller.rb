@@ -21,8 +21,8 @@ class Api::CommentsController < ApplicationController
         @comment = Comment.find_by(id: params[:id])
         @user = current_user
         if @comment
-            if @user.id == comment.author_id
-                comment.destroy
+            if @user.id == @comment.author_id
+                @comment.destroy
             else
                 render json: ['Not your comment!'], status: 422
             end

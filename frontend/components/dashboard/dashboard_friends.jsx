@@ -44,7 +44,6 @@ class FriendsDashboard extends React.Component {
             this.props.requestUserFriends(this.props.currentUser.id);
         }
         );
-        alert("Unfriended!")
     }
 
     render(){

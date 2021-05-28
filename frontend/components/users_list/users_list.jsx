@@ -45,7 +45,6 @@ class UsersList extends React.Component {
         this.props.createFriend({user_id: userId, friend_id: friendId})
         .then(() => this.props.fetchUserFriends(this.props.currentUser.id));
         
-        alert(`Friend Added!`);
     }
 
 
