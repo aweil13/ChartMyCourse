@@ -1,7 +1,7 @@
 
-[<p>
-<img src='app/assets/images/Logo.png' width="400">
-</p>](href='https://chart-my-course.herokuapp.com/#/')
+
+# [<p align="center"><img src="app/assets/images/Logo.PNG" width="500"></p>][1]
+
 
 ChartMyCourse is a single-page web application and clone of [MapMyRun](https://www.mapmyrun.com/); it enables users to create running routes, add other users as friends and comment on other users courses using:  
 
@@ -24,4 +24,4 @@ ChartMyCourse is a single-page web application and clone of [MapMyRun](https://w
 
 
 
-
+[1]: https://chart-my-course.herokuapp.com/#/
