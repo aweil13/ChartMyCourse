@@ -17,7 +17,10 @@ class CommentToolbar extends React.Component {
 
     handleSubmit(e){
         e.preventDefault();
-        this.props.createComment(this.state);
+        this.props.createComment(this.state).then(() => {this.setState({author_id: this.props.author_id,
+            course_id: this.props.course_id,
+            body: '',
+            username: this.props.username})});
     }
 
     update(field){
