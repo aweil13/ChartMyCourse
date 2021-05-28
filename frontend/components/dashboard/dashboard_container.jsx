@@ -3,6 +3,7 @@ import {requestUserCourses, deleteCourse} from '../../actions/courses_actions';
 import {fetchUser} from '../../actions/users_actions';
 import DashboardContainer from './dashboard';
 
+
 const mSTP = ({session, entities}) => ({
     currentUser: entities.users.currentUser ? entities.users.currentUser : entities.users[session.id],
     courses: entities.courses,

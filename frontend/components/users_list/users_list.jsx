@@ -8,7 +8,7 @@ import Footer from '../footer/footer';
 
 const mSTP = ({entities, session, errors}) => ({
     users: entities.users.allUsers,
-    currentUser: entities.users[session.id],
+    currentUser: entities.users.currentUser ? entities.users.currentUser : entities.users[session.id],
     userFriends: entities.friends,
     errors: errors.friends
 })

@@ -6,7 +6,7 @@ import { connect } from 'react-redux';
 import Footer from '../footer/footer';
 
 const mSTP = ({entities, session}) => ({
-    currentUser: entities.users[session.id],
+    currentUser: entities.users.currentUser ? entities.users.currentUser : entities.users[session.id],
     friendships: entities.friends,
     friends: entities.users['userFriends']
 })
@@ -49,7 +49,6 @@ class FriendsDashboard extends React.Component {
 
     render(){
         const {friendships, friends, currentUser} = this.props;
-        debugger;
         if (!friends || !friendships){return null;}
         if (Object.values(friends).length === 0){
             return (
