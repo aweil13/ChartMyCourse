@@ -63,6 +63,8 @@ class CourseMap extends React.Component{
         this.renderRoutes();
     }
 
+
+    // Course creation + distance updating using Directions API functions
     renderRoutes(){
         if (!this.directionsService) {this.directionsService = new google.maps.DirectionsService();}
         if(!this.directionsDisplay) {this.directionsDisplay = new google.maps.DirectionsRenderer({map: this.map, preserveViewport: true});}
@@ -93,6 +95,9 @@ class CourseMap extends React.Component{
         this.setState({distance: distanceText});
     }
 
+
+    // Side Toolbar Buttons for returning to the start of the course, undoing the last waypoint creating and clearing all points. Also the distance updating function.
+    
     clearMarkers(){
         if (this.currentWaypoints.length > 0){
             this.currentWaypoints = [];
