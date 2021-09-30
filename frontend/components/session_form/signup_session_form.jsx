@@ -12,7 +12,7 @@ class SignupSessionForm extends React.Component {
       this.props.clearErrors();
   }
 
-
+ 
     handleSubmitDummy(e){
       e.preventDefault();
       const guest = this.props.dummy;
